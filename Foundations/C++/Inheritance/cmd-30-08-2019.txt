@@ -1,0 +1,50 @@
+    1  cd /SoftDev/C++/Inheritance/
+    2  vi virtdtortest.cpp
+    3  vi payroll2.h 
+    4  vi virtdtortest.cpp
+    5  c++ -o virtdtortest virtdtortest.cpp 
+    6  vi virtdtortest.cpp
+    7  c++ -o virtdtortest virtdtortest.cpp 
+    8  ./virtdtortest 
+    9  vi virtdtortest.cpp
+   10  vi payroll2.h 
+   11  vi virtdtortest.cpp
+   12  c++ -o virtdtortest virtdtortest.cpp 
+   13  ./virtdtortest 
+   14  vi virtdtortest.cpp 
+   15  c++ -o virtdtortest virtdtortest.cpp 
+   16  ./virtdtortest 
+   17  vi virtdtortest.cpp 
+   18  cp virtdtortest.cpp rttitest.cpp
+   19  vi rttitest.cpp 
+   20  c++ -o rttitest rttitest.cpp 
+   21  vi rttitest.cpp 
+   22  c++ -o rttitest rttitest.cpp 
+   23  vi rttitest.cpp 
+   24  c++ -o rttitest rttitest.cpp 
+   25  vi rttitest.cpp 
+   26  c++ -o rttitest rttitest.cpp 
+   27  ./rttitest 
+   28  vi rttitest.cpp 
+   29  c++ -o rttitest rttitest.cpp 
+   30  ./rttitest 
+   31  vi rttitest.cpp 
+   32  c++ -o rttitest rttitest.cpp 
+   33  ./rttitest 
+   34  vi rttitest.cpp 
+   35  history > cmd-30-08-2019.txt
+   36  vi banking.h
+   37  vi banking.cpp
+   38  vi banking.h
+   39  vi banking.cpp
+   40  c++ -c banking.cpp 
+   41  vi banking.cpp
+   42  c++ -c banking.cpp 
+   43  vi adttest1.cpp
+   44  c++ -o adttest1 adttest1.cpp 
+   45  vi adttest1.cpp
+   46  c++ -o adttest1 adttest1.cpp 
+   47  vi adttest1.cpp
+   48  c++ -o adttest1 adttest1.cpp banking.o
+   49  ./adttest1 
+   50  history > cmd-30-08-2019.txt 

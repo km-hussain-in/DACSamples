@@ -1,0 +1,73 @@
+  757  cd /SoftDev/
+  758  mkdir Foundations
+  759  cd Foundations/
+  760  mkdir Elements
+  761  cd Elements/
+  762  cp ~/Shared/asm/* .
+  763  ll
+  764  rm box.o 
+  765  ll
+  766  vi hello.s
+  767  vi .vimrc
+  768  vi hello.s
+  769  ll
+  770  as -o hello.o hello.s
+  771  ll
+  772  vi hello.s 
+  773  vi hello.o
+  774  ld -o hello hello.o system.o 
+  775  ll
+  776  ./hello 
+  777  vi hello.s
+  778  as -o hello.o hello.s
+  779  ld -o hello hello.o system.o 
+  780  vi hello.s
+  781  as -o hello.o hello.s
+  782  ld -o hello hello.o system.o 
+  783  objdump -t hello.o
+  784  vi hello.s
+  785  as -o hello.o hello.s
+  786  ld -o hello hello.o system.o 
+  787  objdump -t hello.o
+  788  ld -o hello hello.o system.o 
+  789  ./hello 
+  790  vi hello.s
+  791  as -o hello.o hello.s
+  792  vi hello.s
+  793  as -o hello.o hello.s
+  794  ld -o hello hello.o system.o 
+  795  vi hello.s
+  796  as -o hello.o hello.s
+  797  vi hello.s
+  798  as -o hello.o hello.s
+  799  ld -o hello hello.o system.o 
+  800  ./hello 
+  801  vi hello.s
+  802  as -o hello.o hello.s
+  803  ld -o hello hello.o system.o 
+  804  ./hello 
+  805  vi hello.s
+  806  as -o hello.o hello.s
+  807  ld -o hello hello.o system.o 
+  808  ./hello 
+  809  echo $?
+  810  vi hello.s
+  811  ld -o hello hello.o system.o 
+  812  as -o hello.o hello.s
+  813  ld -o hello hello.o system.o 
+  814  ./hello 
+  815  echo $?
+  816  vi hello.s
+  817  as -o hello.o hello.s
+  818  ld -o hello hello.o system.o 
+  819  echo $?
+  820  ./hello 
+  821  echo $?
+  822  cp hello.s variabletest.s
+  823  vi variabletest.s 
+  824  as -o variabletest.o variabletest.s 
+  825  ld -o variabletest variabletest.o system.o 
+  826  ./variabletest 
+  827  vi variabletest.s 
+  828  vi console.i 
+  829  ld --help

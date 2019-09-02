@@ -1,0 +1,42 @@
+    1  cd /SoftDev/Foundations/UNIX/Concurrency/
+    2  vi threadtest1.c
+    3  cc -o threadtest1 threadtest1.c -lpthread
+    4  ./threadtest1 
+    5  vi threadtest1.c
+    6  cc -o threadtest1 threadtest1.c -lpthread
+    7  man pthread_create
+    8  ./threadtest1 
+    9  vi threadtest1.c
+   10  cc -o threadtest1 threadtest1.c -lpthread
+   11  ./threadtest1 
+   12  vi threadtest1.c
+   13  cc -o threadtest1 threadtest1.c -lpthread
+   14  ./threadtest1 
+   15  vi threadtest1.c
+   16  cc -o threadtest1 threadtest1.c -lpthread
+   17  vi threadtest1.c
+   18  cc -o threadtest1 threadtest1.c -lpthread
+   19  ./threadtest1 
+   20  cc -D_FOREGROUND -o threadtest1 threadtest1.c -lpthread
+   21  ./threadtest1 
+   22  cp threadtest1.c threadtest2.c
+   23  vi threadtest2.c 
+   24  cc -o threadtest2 threadtest2.c -lpthread
+   25  ./threadtest2
+   26  vi threadtest2.c 
+   27  cc -o threadtest2 threadtest2.c -lpthread
+   28  ./threadtest2
+   29  cp threadtest1.c mutextest.c
+   30  vi mutextest.c 
+   31  cc -o mutextest mutextest.c 
+   32  ./mutextest 
+   33  vi mutextest.c 
+   34  cc -o mutextest mutextest.c 
+   35  vi mutextest.c 
+   36  cc -o mutextest mutextest.c 
+   37  cc -o mutextest mutextest.c -lpthread
+   38  ./mutextest 
+   39  vi mutextest.c 
+   40  cc -o mutextest mutextest.c -lpthread
+   41  ./mutextest 
+   42  history > cmd-24-08-2019.txt 

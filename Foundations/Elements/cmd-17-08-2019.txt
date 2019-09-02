@@ -1,0 +1,47 @@
+  558  vi arraytest.s 
+  559  vi branchtest.s 
+  560  as -o branchtest.o branchtest.s
+  561  ./branchtest
+  562  vi branchtest.s 
+  563  as -o branchtest.o branchtest.s
+  564  vi branchtest.s 
+  565  as -o branchtest.o branchtest.s
+  566  vi hello.s 
+  567  as -o hello.o hello.s
+  568  vi hello.s 
+  569  as -o hello.o hello.s
+  570  vi arraytest.s
+  571  vi hello.s 
+  572  as -o hello.o hello.s
+  573  vi hello.s 
+  574  as -o hello.o hello.s
+  575  vi hello.s 
+  576  as -o hello.o hello.s
+  577  vi hello.s 
+  578  as -o hello.o hello.s
+  579  ld -o hello hello.o system.o 
+  580  ./hello
+  581  vi hello.s 
+  582  as -o hello.o hello.s
+  583  ld -o hello hello.o system.o 
+  584  ./hello
+  585  vi hello.s 
+  586  as -o hello.o hello.s
+  587  ld -o hello hello.o system.o 
+  588  ./hello
+  589  echo $?
+  590  cd /SoftDev/Foundations/Elements/
+  591  ./proctest 
+  592  cp myproc.s ccproc.s
+  593  vi ccproc.s 
+  594  as -o ccproc.o ccproc.s 
+  595  vi ccproctest1.c
+  596  cc -o ccproctest1 ccproctest1.c ccproc.o
+  597  ./ccproctest1 
+  598  echo $?
+  599  cc -o ccproctest1 ccproctest1.c
+  600  ld -shared -o ccproc.so ccproc.o
+  601  vi ccproctest2.py
+  602  python ccproctest2.py 
+  603  vi ccproctest2.py
+  604  history > cmd-17-08-2019.txt 

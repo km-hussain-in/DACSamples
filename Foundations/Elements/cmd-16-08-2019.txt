@@ -1,0 +1,65 @@
+  597  cp hello.s arraytest.s
+  598  vi hello
+  599  vi arraytest.s 
+  600  ll
+  601  vi .vimrc
+  602  vi arraytest.s 
+  603  as -o arraytest.o arraytest.s 
+  604  ld -o arraytest arraytest.o system.o 
+  605  ./arraytest 
+  606  vi arraytest.s 
+  607  as -o arraytest.o arraytest.s 
+  608  ld -o arraytest arraytest.o system.o 
+  609  ./arraytest 
+  610  cp arraytest.s branchtest.s
+  611  vi branchtest.s 
+  612  as -o branchtest.o branchtest.s 
+  613  ld -o branchtest branchtest.o system.o 
+  614  ./branchtest 
+  615  cp hello.s looptest.s
+  616  vi looptest.s 
+  617  as -o looptest.o looptest.s 
+  618  vi looptest.s 
+  619  as -o looptest.o looptest.s 
+  620  ld -o looptest looptest.o system.o 
+  621  ./looptest 
+  622  vi looptest.s 
+  623  as -o looptest.o looptest.s 
+  624  ld -o looptest looptest.o system.o 
+  625  ./looptest 
+  626  vi looptest.s 
+  627  as -o looptest.o looptest.s 
+  628  ld -o looptest looptest.o system.o 
+  629  ./looptest 
+  630  history > cmd-16-08-2019.txt 
+    1  vi mymacros.i
+    2  vi looptest.s macrotest.s
+    3  cp looptest.s macrotest.s
+    4  vi macrotest.s 
+    5  as -o macrotest.o macrotest.s 
+    6  vi macrotest.s 
+    7  as -o macrotest.o macrotest.s 
+    8  ld -o macrotest macrotest.o system.o 
+    9  ./macrotest 
+   10  objdump -M intel -d macrotest.o
+   11  vi mymacros.i
+   12  vi macrotest.s 
+   13  as -o macrotest.o macrotest.s 
+   14  ld -o macrotest macrotest.o system.o 
+   15  ./macrotest 
+   16  vi myproc.s
+   17  as -o myproc.o myproc.s 
+   18  cp hello.s proctest.s
+   19  vi proctest.s 
+   20  as -o proctest.o proctest.s 
+   21  ld -o proctest proctest.o system.o 
+   22  ld -o proctest proctest.o system.o myproc.o
+   23  ./proctest 
+   24  vi proctest.s 
+   25  as -o proctest.o proctest.s 
+   26  ld -o proctest proctest.o system.o myproc.o
+   27  vi proctest.s 
+   28  as -o proctest.o proctest.s 
+   29  ld -o proctest proctest.o system.o myproc.o
+   30  ./proctest 
+   31  history >> cmd-16-08-2019.txt 

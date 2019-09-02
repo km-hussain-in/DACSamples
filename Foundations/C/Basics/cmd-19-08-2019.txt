@@ -1,0 +1,26 @@
+  629  vi variabletest.c
+  630  cc -o variabletest variabletest.c 
+  631  ./variabletest 
+  632  objdump -t variabletest
+  633  vi arraytest.c
+  634  cc -o arraytest arraytest.c 
+  635  ./arraytest 
+  636  cp arraytest.c iftest.c
+  637  vi iftest.c 
+  638  cc -o iftest iftest.c 
+  639  ./iftest 
+  640  vi iftest.c 
+  641  cc -o iftest iftest.c 
+  642  ./iftest 
+  643  vi iftest.c 
+  644  cc -o iftest iftest.c 
+  645  ./iftest 
+  646  cp hello.c ifelsetest.c
+  647  vi ifelsetest.c 
+  648  cc -o ifelsetest ifelsetest.c 
+  649  ./ifelsetest 
+  650  cp ifelsetest.c switchcasetest.c
+  651  vi switchcasetest.c 
+  652  cc -o switchcasetest switchcasetest.c 
+  653  ./switchcasetest 
+  654  history >> cmd-19-08-2019.txt 

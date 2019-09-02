@@ -1,0 +1,90 @@
+    1  cd /SoftDev/Foundations/
+    2  ll
+    3  cd ..
+    4  mkdir C++
+    5  cd C++
+    6  mkdir Functions
+    7  cd Functions/
+    8  vi namespacetest1.cpp
+    9  c++ -o namespacetest1 namespacetest1.cpp 
+   10  ./namespacetest1 
+   11  echo $?
+   12  vi namespacetest1.cpp
+   13  c++ -o namespacetest1 namespacetest1.cpp 
+   14  ./namespacetest1 
+   15  echo $?
+   16  vi namespacetest1.cpp
+   17  c++ -o namespacetest1 namespacetest1.cpp 
+   18  ./namespacetest1 
+   19  echo $?
+   20  vi namespacetest1.cpp
+   21  c++ -o namespacetest1 namespacetest1.cpp 
+   22  vi namespacetest1.cpp
+   23  c++ -o namespacetest1 namespacetest1.cpp 
+   24  ./namespacetest1 
+   25  echo $?
+   26  vi namespacetest1.cpp
+   27  c++ -o namespacetest1 namespacetest1.cpp 
+   28  objdump -t namespacetest1
+   29  c++filt _ZN6Father8ageOfSonE
+   30  vi namespacetest1.cpp
+   31  vi family.h
+   32  vi namespacetest2.cpp
+   33  c++ -o namespacetest2 namespacetest2.cpp 
+   34  ./namespacetest2
+   35  echo $?
+   36  vi namespacetest2.cpp
+   37  objdump -t namespacetest2
+   38  vi namespacetest2.cpp
+   39  c++ -o namespacetest2 namespacetest2.cpp 
+   40  ./namespacetest2
+   41  echo $?
+   42  vi stdnamespacetest.cpp
+   43  c++ -o stdnamespacetest stdnamespacetest.cpp 
+   44  ./stdnamespacetest 
+   45  vi stdnamespacetest.cpp
+   46  vi power.cpp
+   47  c++ -c power.cpp 
+   48  vi functest.cpp
+   49  c++ -o functest functest.cpp power.o
+   50  vi functest.cpp
+   51  c++ -o functest functest.cpp power.o
+   52  vi functest.cpp
+   53  c++ -o functest functest.cpp power.o
+   54  ./functest 
+   55  vi functest.cpp
+   56  dumpbin -t power.o
+   57  objdump -t power.o
+   58  vi functest.cpp
+   59  c++filt _ZN4Bank6ActionEfPc
+   60  vi functest.cpp
+   61  cp ../../Foundations/C/Functions/primes.o .
+   62  objdump -t primes.o 
+   63  cp functest.c cfunctest.cpp
+   64  cp functest.cpp cfunctest.cpp
+   65  vi cfunctest.cpp 
+   66  c++ -o cfunctest cfunctest.cpp primes.o 
+   67  vi cfunctest.cpp 
+   68  c++ -o cfunctest cfunctest.cpp primes.o 
+   69  ./cfunctest 
+   70  vi cfunctest.cpp 
+   71  c++ -o cfunctest cfunctest.cpp primes.o 
+   72  ./cfunctest 
+   73  vi cfunctest.cpp 
+   74  c++ -o cfunctest cfunctest.cpp primes.o 
+   75  ./cfunctest 
+   76  vi defargtest.cpp
+   77  c++ -o defargtest defargtest.cpp 
+   78  ./defargtest 
+   79  vi defargtest.cpp
+   80  c++ -o defargtest defargtest.cpp 
+   81  ./defargtest 
+   82  vi defargtest.cpp
+   83  cp defargtest.cpp funcovldtest.cpp
+   84  vi funcovldtest.cpp 
+   85  c++ -o funcovldtest funcovldtest.cpp 
+   86  vi funcovldtest.cpp 
+   87  c++ -o funcovldtest funcovldtest.cpp 
+   88  ./funcovldtest 
+   89  vi funcovldtest.cpp 
+   90  history > cmd-26-08-2019.txt

@@ -1,0 +1,83 @@
+    1  cd /SoftDev/Foundations/C/Functions/
+    2  vi ptrtest1.c
+    3  cc -o ptrtest1 ptrtest1.c 
+    4  ./ptrtest1 
+    5  vi ptrtest1.c
+    6  cc -o ptrtest1 ptrtest1.c 
+    7  ./ptrtest1 
+    8  vi ptrtest1.c
+    9  cc -o ptrtest1 ptrtest1.c 
+   10  ./ptrtest1 
+   11  vi ptrtest1.c
+   12  cc -o ptrtest1 ptrtest1.c 
+   13  ./ptrtest1 
+   14  vi ptrtest1.c
+   15  cc -o ptrtest1 ptrtest1.c 
+   16  ./ptrtest1 
+   17  vi ptrtest1.c
+   18  cc -o ptrtest1 ptrtest1.c 
+   19  ./ptrtest1 
+   20  vi ptrtest2.c
+   21  cc -o ptrtest2 ptrtest2.c 
+   22  ./ptrtest2
+   23  vi ptrtest2.c
+   24  cc -o ptrtest2 ptrtest2.c 
+   25  ./ptrtest2
+   26  vi ptrtest2.c
+   27  cc -o ptrtest2 ptrtest2.c 
+   28  ./ptrtest2
+   29  vi ptrtest2.c
+   30  ./ptrtest1 
+   31  vi ptrtest3.c
+   32  cc -o ptrtest3 ptrtest3.c 
+   33  ./ptrtest3
+   34  vi ptrtest3.c
+   35  cc -o ptrtest3 ptrtest3.c 
+   36  ./ptrtest3
+   37  vi ptrtest3.c
+   38  cc -o ptrtest3 ptrtest3.c 
+   39  vi ptrtest3.c
+   40  cc -o ptrtest3 ptrtest3.c 
+   41  ./ptrtest3
+   42  vi ptrtest3.c
+   43  history > cmd-21-08-2019.txt
+   44  cp ptrtest3.c ptrcasttest.c
+   45  vi ptrcasttest.c 
+   46  cc -o ptrcasttest ptrcasttest.c 
+   47  vi ptrcasttest.c 
+   48  cc -o ptrcasttest ptrcasttest.c 
+   49  ./ptrcasttest 
+   50  vi voidptrtest.c
+   51  vi ptrcasttest.c 
+   52  vi voidptrtest.c
+   53  cc -o voidptrtest voidptrtest.c 
+   54  ./voidptrtest 
+   55  vi voidptrtest.c
+   56  cc -o voidptrtest voidptrtest.c 
+   57  ./voidptrtest 
+   58  vi voidptrtest.c
+   59  cc -o voidptrtest voidptrtest.c 
+   60  vi voidptrtest.c
+   61  cc -o voidptrtest voidptrtest.c 
+   62  ./voidptrtest 
+   63  vi voidptrtest.c
+   64  cc -o voidptrtest voidptrtest.c 
+   65  ./voidptrtest 
+   66  vi voidptrtest.c
+   67  cc -o voidptrtest voidptrtest.c 
+   68  vi voidptrtest.c
+   69  cc -o voidptrtest voidptrtest.c 
+   70  ./voidptrtest 
+   71  vi voidptrtest.c
+   72  cc -o voidptrtest voidptrtest.c 
+   73  ./voidptrtest 
+   74  vi funcptrtest.c
+   75  cc -o funcptrtest funcptrtest.c 
+   76  ./funcptrtest 
+   77  vi funcptrtest.c
+   78  cc -o funcptrtest funcptrtest.c 
+   79  ./funcptrtest 
+   80  vi funcptrtest.c
+   81  cc -o funcptrtest funcptrtest.c 
+   82  ./funcptrtest 
+   83  history > cmd-21-08-2019.txt 

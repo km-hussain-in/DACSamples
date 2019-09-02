@@ -1,0 +1,67 @@
+    1  cd /SoftDev/Foundations/
+    2  mkdir -p UNIX/Basics
+    3  cd UNIX/Basics/
+    4  vi libctest.h
+    5  mv libctest.h libctest.c
+    6  cc -o libctest libctest.c 
+    7  ./libctest Jack Jill John
+    8  ./libctest Jane Jack and Jill John
+    9  ./libctest Jane "Jack and Jill" John
+   10  vi libctest.h
+   11  vi libctest.c
+   12  cc -o libctest libctest.c 
+   13  ./libctest Jack Jill John
+   14  cp libctest.c syscalltest.c
+   15  vi syscalltest.c 
+   16  cc -o syscalltest syscalltest.c 
+   17  ./syscalltest Jack Jill John
+   18  vi syscalltest.c 
+   19  cp syscalltest.c posixtest.c
+   20  vi posixtest.c 
+   21  cc -o posixtest posixtest.c 
+   22  ./posixtest Jack Jill John
+   23  kill -l
+   24  vi signaltest.c
+   25  cc -o signaltest signaltest.c 
+   26  objdump -t signaltest
+   27  ./signaltest 
+   28  vi signaltest.c
+   29  ./signaltest 
+   30  cc -o signaltest signaltest.c 
+   31  ./signaltest 
+   32  vi signaltest.c
+   33  cc -o signaltest signaltest.c 
+   34  ./signaltest 
+   35  vi signaltest.c
+   36  cc -o signaltest signaltest.c 
+   37  ./signaltest 
+   38  echo $?
+   39  ./signaltest 
+   40  vi signaltest.c
+   41  cc -o signaltest signaltest.c 
+   42  ./signaltest 
+   43  vi signaltest.c
+   44  cc -o signaltest signaltest.c 
+   45  ./signaltest 
+   46  vi encbuf.c
+   47  cc -c encbuf.c 
+   48  vi strmiotest.c
+   49  cc -o strmiotest strmiotest.c 
+   50  ./strmiotest 
+   51  ./strmiotest data1.txt
+   52  ./strmiotest data1.txt data2.txt
+   53  cp signaltest.c data1.txt
+   54  ./strmiotest data1.txt data2.txt
+   55  ll
+   56  ./strmiotest data1.txt data2.txt
+   57  rm data2.txt 
+   58  vi strmiotest.c
+   59  cc -o strmiotest strmiotest.c 
+   60  cc -o strmiotest strmiotest.c  encbuf.o
+   61  ./strmiotest data1.txt data2.txt 
+   62  ll
+   63  vi data2.txt 
+   64  ./strmiotest data2.txt data3.txt 16 
+   65  vi data3.txt 
+   66  vi strmiotest.c
+   67  history > cmd-22-08-2019.txt

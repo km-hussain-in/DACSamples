@@ -1,0 +1,80 @@
+    1  cd /SoftDev/C++/Functions/
+    2  vi reftypetest.cpp
+    3  c++ -o reftypetest reftypetest.cpp 
+    4  ./reftypetest 
+    5  vi reftypetest.cpp
+    6  c++ -o reftypetest reftypetest.cpp 
+    7  ./reftypetest 
+    8  vi reftypetest.cpp
+    9  c++filt _Z4SwapPdd
+   10  c++filt _Z4SwapPdPd
+   11  c++filt _Z4SwapRdRd
+   12  vi reftypetest.cpp
+   13  c++ -o reftypetest reftypetest.cpp 
+   14  ./reftypetest 
+   15  vi throwtest.cpp
+   16  c++ -o throwtest throwtest.cpp 
+   17  ./throwtest 
+   18  vi throwtest.cpp
+   19  c++ -o throwtest throwtest.cpp 
+   20  ./throwtest 
+   21  vi throwtest.cpp
+   22  c++ -o throwtest throwtest.cpp 
+   23  ./throwtest 
+   24  jeff
+   25  ./throwtest 
+   26  vi throwtest.cpp
+   27  cp throwtest.cpp trycatchtest1.cpp
+   28  vi trycatchtest1.cpp 
+   29  c++ -o trycatchtest1 trycatchtest1.cpp 
+   30  ./trycatchtest1 
+   31  vi trycatchtest1.cpp 
+   32  c++ -o trycatchtest1 trycatchtest1.cpp 
+   33  ./trycatchtest1 
+   34  cp throwtest.cpp trycatchtest2.cpp
+   35  vi trycatchtest2.cpp 
+   36  c++ -o trycatchtest2 trycatchtest2.cpp 
+   37  ./trycatchtest2
+   38  vi throwtest.cpp
+   39  vi trycatchtest1.cpp 
+   40  c++ -o trycatchtest1 trycatchtest1.cpp 
+   41  cd ..
+   42  mkdir Classes
+   43  cd Classes/
+   44  vi classtest1.cpp
+   45  c++ -o classtest1 classtest1.cpp 
+   46  vi classtest1.cpp
+   47  c++ -o classtest1 classtest1.cpp 
+   48  ./classtest1 
+   49  vi classtest1.cpp
+   50  c++ -o classtest1 classtest1.cpp 
+   51  ./classtest1 
+   52  vi classtest1.cpp
+   53  c++ -o classtest1 classtest1.cpp 
+   54  ./classtest1 
+   55  vi classtest1.cpp
+   56  c++ -o classtest1 classtest1.cpp 
+   57  ./classtest1 
+   58  cp classtest1.cpp classtest2.cpp
+   59  vi classtest2.cpp 
+   60  vi classtest1.cpp 
+   61  vi classtest2.cpp 
+   62  c++ -o classtest2 classtest2.cpp 
+   63  ./classtest2
+   64  vi classtest2.cpp 
+   65  c++ -o classtest2 classtest2.cpp 
+   66  ./classtest2
+   67  cp classtest2.cpp ctortest.cpp
+   68  vi ctortest.cpp 
+   69  c++ -o ctortest ctortest.cpp 
+   70  ./ctortest 
+   71  vi ctortest.cpp 
+   72  c++ -o ctortest ctortest.cpp 
+   73  ./ctortest 
+   74  vi ctortest.cpp 
+   75  c++ -o ctortest ctortest.cpp 
+   76  ./ctortest 
+   77  vi ctortest.cpp 
+   78  c++ -o ctortest ctortest.cpp 
+   79  ./ctortest 
+   80  history > cmd-27-08-2019.txt

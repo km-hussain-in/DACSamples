@@ -1,0 +1,35 @@
+    1  cd ..
+    2  mkdir Functions
+    3  cd Functions/
+    4  vi primes.c
+    5  cc -c primes.c 
+    6  ll
+    7  objdump -t primes.o
+    8  vi functest1.c
+    9  cc -o functest1 functest1.c 
+   10  cc -o functest1 functest1.c primes.o
+   11  ./functest1 
+   12  vi box.h
+   13  vi box.c
+   14  cc -c box.c
+   15  cp ../Basics/hello.c functest2.c
+   16  vi functest2.c 
+   17  cc -o functest2 functest2.c box.o
+   18  ./functest2
+   19  cp box.h oldbox.h
+   20  cp box.c oldbox.c
+   21  vi box.h
+   22  vi box.c
+   23  cc -c box.c
+   24  cc -o functest2 functest2.c box.o
+   25  ./functest2
+   26  cp functest2.c functest3.c
+   27  vi functest3.c
+   28  cc -o functest3 functest3.c box.o
+   29  ./functest3
+   30  vi udttest.c
+   31  cc -o udttest udttest.c 
+   32  ./udttest 
+   33  vi udttest.c
+   34  history 
+   35  history > cmd-20-08-2019.txt 

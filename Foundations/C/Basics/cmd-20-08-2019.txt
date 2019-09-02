@@ -1,0 +1,43 @@
+    1  cd /SoftDev/Foundations/C/Basics/
+    2  vi dowhiletest.c
+    3  cc -o dowhiletest dowhiletest.c 
+    4  ./dowhiletest 
+    5  vi dowhiletest.c
+    6  cc -o dowhiletest dowhiletest.c 
+    7  ./dowhiletest 
+    8  vi ../../Elements/looptest.s 
+    9  vi dowhiletest.c
+   10  ./dowhiletest 
+   11  cc32 -o dowhiletest dowhiletest.c 
+   12  ./dowhiletest 
+   13  cp hello.c whiletest.c
+   14  vi whiletest.c 
+   15  cc -o whiletest whiletest.c 
+   16  ./whiletest 
+   17  cc32 -o whiletest whiletest.c 
+   18  ./whiletest 
+   19  cp hello.c fortest.c
+   20  vi fortest.c 
+   21  cc -o fortest fortest.c 
+   22  ./fortest 
+   23  vi mymacros.h
+   24  cp hello.c macrotest1.c
+   25  vi macrotest1.c 
+   26  cc -o macrotest1 macrotest1.c 
+   27  ./macrotest1 
+   28  vi macrotest1.c 
+   29  cp hello.c macrotest2.c
+   30  vi macrotest2.c 
+   31  cc -o macrotest2 macrotest2.c
+   32  vi macrotest2.c 
+   33  cc -o macrotest2 macrotest2.c
+   34  vi macrotest2.c 
+   35  cc -o macrotest2 macrotest2.c
+   36  ./macrotest2
+   37  vi macrotest2.c 
+   38  cc -o squares macrotest2.c
+   39  ./squares 
+   40  cc -D_BIG -o cubes  macrotest2.c
+   41  ./cubes 
+   42  vi macrotest2.c 
+   43  history > cmd-20-08-2019.txt 

@@ -1,0 +1,127 @@
+    1  cd /SoftDev/C++/Classes/
+    2  cp ctortest.cpp staticmemtest.cpp
+    3  vi staticmemtest.cpp 
+    4  c++ -o staticmemtest staticmemtest.cpp 
+    5  vi staticmemtest.cpp 
+    6  c++ -o staticmemtest staticmemtest.cpp 
+    7  vi staticmemtest.cpp 
+    8  c++ -o staticmemtest staticmemtest.cpp 
+    9  vi staticmemtest.cpp 
+   10  c++ -o staticmemtest staticmemtest.cpp 
+   11  vi staticmemtest.cpp 
+   12  c++ -o staticmemtest staticmemtest.cpp 
+   13  vi staticmemtest.cpp 
+   14  c++ -o staticmemtest staticmemtest.cpp 
+   15  ./staticmemtest 
+   16  cp staticmemtest.cpp dtortest.cpp
+   17  vi dtortest.cpp 
+   18  c++ -o dtortest dtortest.cpp 
+   19  ./dtortest 
+   20  vi dtortest.cpp 
+   21  c++ -o dtortest dtortest.cpp 
+   22  ./dtortest 
+   23  vi dtortest.cpp 
+   24  cp dtortest.cpp objreftest.cpp
+   25  vi objreftest.cpp 
+   26  c++ -o objreftest objreftest.cpp 
+   27  ./objreftest 
+   28  vi objreftest.cpp 
+   29  c++ -o objreftest objreftest.cpp 
+   30  ./objreftest 
+   31  vi objreftest.cpp 
+   32  c++ -o objreftest objreftest.cpp 
+   33  ./objreftest 
+   34  vi objreftest.cpp 
+   35  c++ -o objreftest objreftest.cpp 
+   36  vi objreftest.cpp 
+   37  c++ -o objreftest objreftest.cpp 
+   38  ./objreftest 
+   39  vi objreftest.cpp 
+   40  c++ -o objreftest objreftest.cpp 
+   41  vi objreftest.cpp 
+   42  history > cmd-28-08-2019.txt 
+    1  cd /SoftDev/C++/Classes/
+    2  cp ctortest.cpp staticmemtest.cpp
+    3  vi staticmemtest.cpp 
+    4  c++ -o staticmemtest staticmemtest.cpp 
+    5  vi staticmemtest.cpp 
+    6  c++ -o staticmemtest staticmemtest.cpp 
+    7  vi staticmemtest.cpp 
+    8  c++ -o staticmemtest staticmemtest.cpp 
+    9  vi staticmemtest.cpp 
+   10  c++ -o staticmemtest staticmemtest.cpp 
+   11  vi staticmemtest.cpp 
+   12  c++ -o staticmemtest staticmemtest.cpp 
+   13  vi staticmemtest.cpp 
+   14  c++ -o staticmemtest staticmemtest.cpp 
+   15  ./staticmemtest 
+   16  cp staticmemtest.cpp dtortest.cpp
+   17  vi dtortest.cpp 
+   18  c++ -o dtortest dtortest.cpp 
+   19  ./dtortest 
+   20  vi dtortest.cpp 
+   21  c++ -o dtortest dtortest.cpp 
+   22  ./dtortest 
+   23  vi dtortest.cpp 
+   24  cp dtortest.cpp objreftest.cpp
+   25  vi objreftest.cpp 
+   26  c++ -o objreftest objreftest.cpp 
+   27  ./objreftest 
+   28  vi objreftest.cpp 
+   29  c++ -o objreftest objreftest.cpp 
+   30  ./objreftest 
+   31  vi objreftest.cpp 
+   32  c++ -o objreftest objreftest.cpp 
+   33  ./objreftest 
+   34  vi objreftest.cpp 
+   35  c++ -o objreftest objreftest.cpp 
+   36  vi objreftest.cpp 
+   37  c++ -o objreftest objreftest.cpp 
+   38  ./objreftest 
+   39  vi objreftest.cpp 
+   40  c++ -o objreftest objreftest.cpp 
+   41  vi objreftest.cpp 
+   42  history > cmd-28-08-2019.txt 
+   43  ulimit -s
+   44  cp classtest1.cpp newdeltest1.cpp
+   45  vi newdeltest1.cpp 
+   46  c++ -o newdeltest1 newdeltest1.cpp 
+   47  ./newdeltest1 
+   48  vi newdeltest1.cpp 
+   49  c++ -o newdeltest1 newdeltest1.cpp 
+   50  ./newdeltest1 
+   51  cp newdeltest1.cpp newdeltest2.cpp
+   52  vi newdeltest2.cpp 
+   53  c++ -o newdeltest2 newdeltest2.cpp 
+   54  ./newdeltest2
+   55  vi newdeltest2.cpp 
+   56  c++ -o newdeltest2 newdeltest2.cpp 
+   57  ./newdeltest2
+   58  vi newdeltest2.cpp 
+   59  c++ -o newdeltest2 newdeltest2.cpp 
+   60  vi newdeltest2.cpp 
+   61  c++ -o newdeltest2 newdeltest2.cpp 
+   62  ./newdeltest2
+   63  cp objreftest.cpp opovldtest1.cpp
+   64  vi opovldtest1.cpp 
+   65  c++ -o opovldtest1 opovldtest1.cpp 
+   66  vi opovldtest1.cpp 
+   67  c++ -o opovldtest1 opovldtest1.cpp 
+   68  ./opovldtest1 
+   69  vi opovldtest1.cpp 
+   70  c++ -o opovldtest1 opovldtest1.cpp 
+   71  ./opovldtest1 
+   72  vi opovldtest1.cpp 
+   73  c++ -o opovldtest1 opovldtest1.cpp 
+   74  vi opovldtest1.cpp 
+   75  c++ -o opovldtest1 opovldtest1.cpp 
+   76  vi opovldtest1.cpp 
+   77  c++ -o opovldtest1 opovldtest1.cpp 
+   78  ./opovldtest1 
+   79  vi opovldtest1.cpp 
+   80  c++ -o opovldtest1 opovldtest1.cpp 
+   81  vi opovldtest1.cpp 
+   82  c++ -o opovldtest1 opovldtest1.cpp 
+   83  ./opovldtest1 
+   84  vi opovldtest1.cpp 
+   85  history >> cmd-28-08-2019.txt 

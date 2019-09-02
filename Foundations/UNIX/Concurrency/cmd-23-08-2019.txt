@@ -1,0 +1,116 @@
+    1  cd /SoftDev/Foundations/UNIX/Basics/
+    2  cp encbuf.c revbuf.c
+    3  vi revbuf.c 
+    4  cc -c revbuf.c 
+    5  vi mmapiotest.c
+    6  man fstat
+    7  vi mmapiotest.c
+    8  cc -o mmapiotest mmapiotest.c 
+    9  cc -o mmapiotest mmapiotest.c revbuf.o
+   10  ./mmapiotest 
+   11  vi data1.txt 
+   12  ./mmapiotest data1.txt 
+   13  vi data1.txt 
+   14  ./mmapiotest data1.txt 
+   15  vi data1.txt 
+   16  vi mmapiotest.c
+   17  cc -shared -o librevbuf.so revbuf.c
+   18  cc -o mmapiotest mmapiotest.c  librevbuf.so 
+   19  ./mmapiotest data1.txt 
+   20  export LD_LIBRARY_PATH=.
+   21  ./mmapiotest data1.txt 
+   22  vi data1.txt 
+   23  unset LD_LIBRARY_PATH
+   24  ./mmapiotest
+   25  cp librevbuf.so /usr/lib
+   26  sudo cp librevbuf.so /usr/lib
+   27  ./mmapiotest
+   28  sudo cp librevbuf.so /usr/lib64
+   29  ./mmapiotest
+   30  sudo rm /usr/lib/librevbuf.so 
+   31  sudo rm /usr/lib64/librevbuf.so 
+   32  ./mmapiotest
+   33  export LD_LIBRARY_PATH=.
+   34  ./mmapiotest
+   35  cc -shared -o libencbuf.so encbuf.c
+   36  vi encbuf.c 
+   37  cc -shared -o libencbuf.so encbuf.c
+   38  cc -shared -fPIC -o libencbuf.so encbuf.c
+   39  vi revbuf.c 
+   40  cc -shared -o librevbuf.so revbuf.c
+   41  vi encbuf.c 
+   42  cc -shared -o libencbuf.so encbuf.c
+   43  vi encbuf.c 
+   44  cc -shared -o libencbuf.so encbuf.c
+   45  vi encbuf.c 
+   46  cc -shared -o libencbuf.so encbuf.c
+   47  vi encbuf.c 
+   48  cc -shared -o libencbuf.so encbuf.c
+   49  cc -shared -fPIC -o libencbuf.so encbuf.c
+   50  vi shobjdltest.c
+   51  cc -o shobjdltest shobjdltest.c 
+   52  cc -o shobjdltest shobjdltest.c -ldl
+   53  ./shobjdltest 
+   54  ./shobjdltest libxyz.so
+   55  ./shobjdltest libm.so
+   56  ./shobjdltest libencbuf.so 
+   57  ./shobjdltest librevbuf.so 
+   58  history > cmd-23-08-2019.txt 
+   59  cd ..
+   60  mkdir Concurrency
+   61  cd Concurrency/
+   62  vi worker.h
+   63  vi forktest.c
+   64  ps -A
+   65  ps
+   66  mv forktest.c forktest1.c 
+   67  cc -o forktest1 forktest1.c 
+   68  ./forktest1 
+   69  vi forktest1.c
+   70  cc -o forktest1 forktest1.c 
+   71  ./forktest1 
+   72  vi forktest1.c
+   73  cc -o forktest1 forktest1.c 
+   74  ./forktest1 
+   75  vi forktest1.c
+   76  cc -o forktest1 forktest1.c 
+   77  ./forktest1 
+   78  vi forktest1.c
+   79  cc -o forktest1 forktest1.c 
+   80  ./forktest1 
+   81  vi forktest1.c
+   82  cc -o forktest1 forktest1.c 
+   83  ./forktest1 
+   84  cp forktest1.c forktest2.c
+   85  vi forktest2.c 
+   86  cc -o forktest2 forktest2.c 
+   87  ./forktest2
+   88  ./forktest2 hello
+   89  ./forktest2 forktest1
+   90  vi forktest2.c 
+   91  cc -o forktest2 forktest2.c 
+   92  ./forktest2 forktest1
+   93  cp forktest1.c semaphoretest.c
+   94  vi semaphoretest.c 
+   95  cc -o semaphoretest semaphoretest.c 
+   96  vi semaphoretest.c 
+   97  cc -o semaphoretest semaphoretest.c 
+   98  vi semaphoretest.c 
+   99  cc -o semaphoretest semaphoretest.c 
+  100  ./semaphoretest 
+  101  vi semaphoretest.c 
+  102  cc -o semaphoretest semaphoretest.c 
+  103  cc -o semaphoretest semaphoretest.c -lpthread
+  104  ./semaphoretest 
+  105  vi semaphoretest.c 
+  106  cp forktest1.c pipetest.c
+  107  vi pipetest.c 
+  108  cc -o pipetest pipetest.c 
+  109  ./pipetest 
+  110  vi pipetest.c 
+  111  cc -o pipetest pipetest.c 
+  112  ./pipetest 
+  113  vi pipetest.c 
+  114  cc -o pipetest pipetest.c
+  115  ./pipetest 
+  116  history > cmd-23-08-2019.txt 

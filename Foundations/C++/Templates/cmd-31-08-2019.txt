@@ -1,0 +1,100 @@
+    1  cd /SoftDev/C++/Inheritance/
+    2  cp adttest1.cpp adttest2.cpp
+    3  vi adttest2.cpp 
+    4  c++ -o adttest2 adttest2.cpp banking.o
+    5  ./adttest2
+    6  vi adttest2.cpp 
+    7  c++ -o adttest2 adttest2.cpp banking.o
+    8  ./adttest2
+    9  vi adttest2.cpp 
+   10  c++ -o adttest2 adttest2.cpp banking.o
+   11  ./adttest2
+   12  vi adttest2.cpp 
+   13  c++ -o adttest2 adttest2.cpp banking.o
+   14  vi adttest2.cpp 
+   15  c++ -o adttest2 adttest2.cpp banking.o
+   16  ./adttest2
+   17  vi middodtest.cpp
+   18  c++ -o middodtest middodtest.cpp 
+   19  vi middodtest.cpp
+   20  c++ -o middodtest middodtest.cpp 
+   21  vi middodtest.cpp
+   22  c++ -o middodtest middodtest.cpp 
+   23  ./middodtest 
+   24  vi middodtest.cpp
+   25  c++ -o middodtest middodtest.cpp 
+   26  vi middodtest.cpp
+   27  c++ -o middodtest middodtest.cpp 
+   28  ./middodtest 
+   29  cp middodtest.cpp mivitest.cpp
+   30  vi mivitest.cpp 
+   31  c++ -o mivitest mivitest.cpp 
+   32  vi mivitest.cpp 
+   33  c++ -o mivitest mivitest.cpp 
+   34  ./mivitest 
+   35  history > cmd-31-08-2019.txt
+   36  cd ..
+   37  mkdir Templates
+   38  cd Templates/
+   39  vi functmplttest1.cpp
+   40  c++ -o functmplttest1 functmplttest1.cpp 
+   41  ./functmplttest1 
+   42  vi functmplttest1.cpp
+   43  c++ -o functmplttest1 functmplttest1.cpp 
+   44  vi functmplttest1.cpp
+   45  c++ -o functmplttest1 functmplttest1.cpp 
+   46  ./functmplttest1 
+   47  vi functmplttest1.cpp
+   48  c++ -o functmplttest1 functmplttest1.cpp 
+   49  ./functmplttest1 
+   50  vi functmplttest1.cpp
+   51  objdump -t functmplttest1
+   52  vi functmplttest1.cpp
+   53  c++ -o functmplttest1 functmplttest1.cpp 
+   54  :q
+   55  vi functmplttest1.cpp
+   56  vi functmplttest2.cpp
+   57  c++ -o functmplttest2 functmplttest2.cpp 
+   58  ./functmplttest2
+   59  cp ../Classes/newdeltest1.cpp interval.h
+   60  vi interval.h 
+   61  vi functmplttest2.cpp
+   62  c++ -o functmplttest2 functmplttest2.cpp 
+   63  vi functmplttest2.cpp
+   64  vi interval.h 
+   65  c++ -o functmplttest2 functmplttest2.cpp 
+   66  ./functmplttest2
+   67  vi functmplttest2.cpp
+   68  c++ -o functmplttest2 functmplttest2.cpp 
+   69  ./functmplttest2
+   70  vi functmplttest2.cpp
+   71  c++ -o functmplttest2 functmplttest2.cpp 
+   72  ./functmplttest2
+   73  vi functmplttest2.cpp
+   74  vi classtmplttest1.cpp
+   75  c++ -o classtmplttest1 classtmplttest1.cpp 
+   76  vi classtmplttest1.cpp
+   77  c++ -o classtmplttest1 classtmplttest1.cpp 
+   78  vi classtmplttest1.cpp
+   79  c++ -o classtmplttest1 classtmplttest1.cpp 
+   80  ./classtmplttest1 
+   81  vi classtmplttest1.cpp
+   82  c++ -o classtmplttest1 classtmplttest1.cpp 
+   83  ./classtmplttest1 
+   84  cp classtmplttest1.cpp classtmplttest2.cpp
+   85  vi classtmplttest2.cpp 
+   86  c++ -o classtmplttest2 classtmplttest2.cpp 
+   87  ./classtmplttest2
+   88  vi classtmplttest2.cpp 
+   89  c++ -o classtmplttest2 classtmplttest2.cpp 
+   90  vi classtmplttest2.cpp 
+   91  c++ -o classtmplttest2 classtmplttest2.cpp 
+   92  ./classtmplttest2
+   93  cp classtmplttest1.cpp classtmplttest3.cpp
+   94  vi classtmplttest3.cpp 
+   95  c++ -o classtmplttest3 classtmplttest3.cpp 
+   96  ./classtmplttest3
+   97  vi classtmplttest3.cpp 
+   98  c++ -o classtmplttest3 classtmplttest3.cpp 
+   99  ./classtmplttest3
+  100  history > cmd-31-08-2019.txt

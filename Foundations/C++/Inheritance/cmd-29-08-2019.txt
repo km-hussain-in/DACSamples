@@ -1,0 +1,106 @@
+    1  cd /SoftDev/C++/Classes/
+    2  ll
+    3  cp opovldtest1.cpp opovldtest2.cpp
+    4  vi opovldtest2.cpp 
+    5  c++ -o opovldtest2 opovldtest2.cpp 
+    6  vi opovldtest2.cpp 
+    7  c++ -o opovldtest2 opovldtest2.cpp 
+    8  ./opovldtest2
+    9  vi opovldtest2.cpp 
+   10  c++ -o opovldtest2 opovldtest2.cpp 
+   11  ./opovldtest2
+   12  vi opovldtest2.cpp 
+   13  c++ -o opovldtest2 opovldtest2.cpp 
+   14  ./opovldtest2
+   15  vi opovldtest2.cpp 
+   16  c++ -o opovldtest2 opovldtest2.cpp 
+   17  vi opovldtest2.cpp 
+   18  c++ -o opovldtest2 opovldtest2.cpp 
+   19  ./opovldtest2
+   20  copy newdeltest1.cpp objcopytest.cpp
+   21  cp newdeltest1.cpp objcopytest.cpp
+   22  vi objcopytest.cpp 
+   23  c++ -o objcopytest objcopytest.cpp 
+   24  ./objcopytest 
+   25  vi objcopytest.cpp 
+   26  c++ -o objcopytest objcopytest.cpp 
+   27  ./objcopytest 
+   28  vi objcopytest.cpp 
+   29  c++ -o objcopytest objcopytest.cpp 
+   30  ./objcopytest 
+   31  vi objcopytest.cpp 
+   32  c++ -o objcopytest objcopytest.cpp 
+   33  ./objcopytest 
+   34  vi objcopytest.cpp 
+   35  c++ -o objcopytest objcopytest.cpp 
+   36  ./objcopytest 
+   37  vi objcopytest.cpp 
+   38  c++ -o objcopytest objcopytest.cpp 
+   39  ./objcopytest 
+   40  vi objcopytest.cpp 
+   41  c++ -o objcopytest objcopytest.cpp 
+   42  vi objcopytest.cpp 
+   43  c++ -o objcopytest objcopytest.cpp 
+   44  ./objcopytest 
+   45  vi objcopytest.cpp 
+   46  cp newdeltest1.cpp objcasttest.cpp
+   47  vi objcasttest.cpp 
+   48  c++ -o objcasttest objcasttest.cpp 
+   49  vi objcasttest.cpp 
+   50  c++ -o objcasttest objcasttest.cpp 
+   51  vi objcasttest.cpp 
+   52  c++ -o objcasttest objcasttest.cpp 
+   53  ./objcasttest 
+   54  vi objcasttest.cpp 
+   55  vi staticmemtest.cpp 
+   56  vi objcasttest.cpp 
+   57  c++ -o objcasttest objcasttest.cpp 
+   58  ./objcasttest 
+   59  vi objcasttest.cpp 
+   60  c++ -o objcasttest objcasttest.cpp 
+   61  vi objcasttest.cpp 
+   62  c++ -o objcasttest objcasttest.cpp 
+   63  vi objcasttest.cpp 
+   64  c++ -o objcasttest objcasttest.cpp 
+   65  ./objcasttest 
+   66  vi objcasttest.cpp 
+   67  c++ -o objcasttest objcasttest.cpp 
+   68  vi objcasttest.cpp 
+   69  c++ -o objcasttest objcasttest.cpp 
+   70  vi objcasttest.cpp 
+   71  c++ -o objcasttest objcasttest.cpp 
+   72  vi objcasttest.cpp 
+   73  c++ -o objcasttest objcasttest.cpp 
+   74  ./objcasttest 
+   75  cd ..
+   76  mkdir Inheritance
+   77  cd Inheritance/
+   78  vi payroll1.h
+   79  vi derivedclasstest.cpp
+   80  c++ -o derivedclasstest derivedclasstest.cpp 
+   81  vi payroll1.h
+   82  c++ -o derivedclasstest derivedclasstest.cpp 
+   83  vi payroll1.h
+   84  vi derivedclasstest.cpp 
+   85  c++ -o derivedclasstest derivedclasstest.cpp 
+   86  vi derivedclasstest.cpp 
+   87  c++ -o derivedclasstest derivedclasstest.cpp 
+   88  ./derivedclasstest 
+   89  vi derivedclasstest.cpp 
+   90  c++ -o derivedclasstest derivedclasstest.cpp 
+   91  vi derivedclasstest.cpp 
+   92  c++ -o derivedclasstest derivedclasstest.cpp 
+   93  ./derivedclasstest 
+   94  vi derivedclasstest.cpp 
+   95  c++ -o derivedclasstest derivedclasstest.cpp 
+   96  ./derivedclasstest 
+   97  vi derivedclasstest.cpp 
+   98  vi payroll1.h 
+   99  cp payroll1.h payroll2.h 
+  100  vi payroll2.h 
+  101  cp derivedclasstest.cpp virtfunctest.cpp
+  102  vi virtfunctest.cpp 
+  103  c++ -o virtfunctest virtfunctest.cpp 
+  104  ./virtfunctest 
+  105  vi virtfunctest.cpp 
+  106  history > cmd-29-08-2019.txt
