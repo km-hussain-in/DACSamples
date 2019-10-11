@@ -1,0 +1,17 @@
+cd MS.NET\Applications
+md Web
+cd Web
+\init.cmd
+s:
+md Basics
+cd Basics
+md Bin
+start server
+np welcome.html
+np web.config
+cd Bin
+np basicwebapp.cs
+csc /t:library basicwebapp.cs
+cd ..
+dir
+doskey /history > cmd-16-09-2019.txt

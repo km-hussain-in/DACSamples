@@ -1,0 +1,50 @@
+genclasstest.exe
+csc genclasstest.cs interval.cs
+genclasstest.exe
+csc genclasstest.cs interval.cs
+genclasstest.exe
+csc genclasstest.cs interval.cs
+genclasstest.exe
+copy genclasstest.cs variancetest.cs
+np variancetest.cs
+csc variancetest.cs interval.cs
+variancetest.exe
+csc variancetest.cs interval.cs
+variancetest.exe
+csc variancetest.cs interval.cs
+variancetest.exe
+doskey /history > cmd-07-09-2019.txt
+autoboxtest.exe 9
+csc autoboxtest.cs
+autoboxtest.exe -7
+autoboxtest.exe 9
+csc autoboxtest.cs
+autoboxtest.exe -7
+autoboxtest.exe 9
+ildasm autoboxtest.exe
+csc autoboxtest.cs
+autoboxtest.exe -7
+autoboxtest.exe 9
+copy autoboxtest.cs genmethodtest.cs
+np genmethodtest.cs
+csc genmethodtest.cs
+ildasm genmethodtest.exe
+cp e:\MS.NET\Fundamentals\Language\OOP\interval.cs
+copy e:\MS.NET\Fundamentals\Language\OOP\interval.cs
+np interval.cs
+csc genmethodtest.cs interval.cs
+genmethodtest.exe -7
+genmethodtest.exe 9
+copy genmethodtest.cs constrainttest.cs
+np constrainttest.cs
+csc constrainttest.cs
+constrainttest.exe
+csc constrainttest.cs
+csc constrainttest.cs interval.cs
+np interval.cs
+csc constrainttest.cs interval.cs
+constrainttest.exe
+np genclasstest.cs
+csc genclasstest.cs interval.cs
+genclasstest.exe
+csc genclasstest.cs interval.cs

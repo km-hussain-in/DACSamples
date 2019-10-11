@@ -1,0 +1,38 @@
+cd MS.NET\Fundamentals\Language
+subst s: .
+s:
+doskey np=notepad $*
+cd Basics
+np methodtest1.cs
+csc methodtest1.cs
+methodtest1.exe
+csc methodtest1.cs
+methodtest1.exe
+csc methodtest1.cs
+methodtest1.exe
+csc methodtest1.cs
+methodtest1.exe
+np methodtest2.cs
+csc methodtest2.cs
+methodtest2.exe 75000
+csc methodtest2.cs
+methodtest2.exe 75000
+methodtest2.exe
+csc methodtest2.cs
+methodtest2.exe 75000
+methodtest2.exe
+methodtest2.exe 6OOOO
+csc methodtest2.cs
+methodtest2.exe 75000
+methodtest2.exe
+methodtest2.exe 6OOOO
+np structtypetest.cs
+csc structtypetest.cs
+structtypetest.exe
+csc structtypetest.cs
+structtypetest.exe
+copy structtypetest.cs classtypetest.cs
+np classtypetest.cs
+csc classtypetest.cs
+classtypetest.exe
+doskey /history > cmd-04-09-2019.txt

@@ -1,0 +1,13 @@
+E:\MS.NET\Applications\Database\EFDesignerTest\PresentationTier\bin\Debug\PresentationTier.exe.config
+E:\MS.NET\Applications\Database\EFDesignerTest\PresentationTier\bin\Debug\PresentationTier.exe
+E:\MS.NET\Applications\Database\EFDesignerTest\PresentationTier\bin\Debug\PresentationTier.pdb
+E:\MS.NET\Applications\Database\EFDesignerTest\PresentationTier\obj\Debug\PresentationTier.csprojAssemblyReference.cache
+E:\MS.NET\Applications\Database\EFDesignerTest\PresentationTier\obj\Debug\PresentationTier.MainForm.resources
+E:\MS.NET\Applications\Database\EFDesignerTest\PresentationTier\obj\Debug\PresentationTier.Properties.Resources.resources
+E:\MS.NET\Applications\Database\EFDesignerTest\PresentationTier\obj\Debug\PresentationTier.csproj.GenerateResource.cache
+E:\MS.NET\Applications\Database\EFDesignerTest\PresentationTier\obj\Debug\PresentationTier.csproj.CoreCompileInputs.cache
+E:\MS.NET\Applications\Database\EFDesignerTest\PresentationTier\obj\Debug\PresentationTier.exe
+E:\MS.NET\Applications\Database\EFDesignerTest\PresentationTier\obj\Debug\PresentationTier.pdb
+E:\MS.NET\Applications\Database\EFDesignerTest\PresentationTier\bin\Debug\Sales.dll
+E:\MS.NET\Applications\Database\EFDesignerTest\PresentationTier\bin\Debug\Sales.pdb
+E:\MS.NET\Applications\Database\EFDesignerTest\PresentationTier\obj\Debug\PresentationTier.csproj.CopyComplete

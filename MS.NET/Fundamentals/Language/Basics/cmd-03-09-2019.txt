@@ -1,0 +1,50 @@
+structtypetest.exe
+ildasm structtypetest.exe
+np propertytest1.cs
+csc propertytest1.cs
+ildasm propertytest1.exe
+csc propertytest1.cs
+propertytest1.exe
+csc propertytest1.cs
+propertytest1.exe
+np propertytest2.cs
+csc propertytest2.cs
+propertytest2.exe
+ildasm propertytest2.exe
+csc propertytest2.cs
+propertytest2.exe
+ildasm propertytest2.exe
+csc propertytest2.cs
+np operatortest.cs
+csc operatortest.cs
+operatortest.exe
+csc operatortest.cs
+operatortest.exe
+csc operatortest.cs
+operatortest.exe
+csc operatortest.cs
+operatortest.exe
+csc operatortest.cs
+operatortest.exe
+csc operatortest.cs
+operatortest.exe
+csc operatortest.cs
+operatortest.exe
+csc operatortest.cs
+operatortest.exe
+doskey /history > cmd-03-09-2019.txt
+csc classtypetest.cs
+classtypetest.exe
+doskey /history > cmd-04-09-2019.txt
+np methodtest3.cs
+csc methodtest3.cs
+methodtest3.exe 3.4 4.3
+csc methodtest3.cs
+methodtest3.exe 3.4 4.3
+csc methodtest3.cs
+methodtest3.exe 3.4 4.3
+np structtypetest.cs
+structtypetest.exe
+csc structtypetest.cs
+structtypetest.exe
+csc structtypetest.cs

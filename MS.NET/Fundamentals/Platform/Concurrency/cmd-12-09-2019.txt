@@ -1,0 +1,50 @@
+np paralleltest2.cs
+csc paralleltest2.cs worker.cs
+paralleltest2.exe
+csc /d:NOPARALLEL paralleltest2.cs worker.cs
+paralleltest2.exe
+csc paralleltest2.cs worker.cs
+paralleltest2.exe
+doskey /history > cmd-12-09-2019.txt
+np threadcoordtest.cs
+csc threadcoordtest.cs worker.cs
+threadcoordtest.exe
+csc threadcoordtest.cs worker.cs
+threadcoordtest.exe
+csc threadcoordtest.cs worker.cs
+threadcoordtest.exe
+csc threadcoordtest.cs worker.cs
+threadcoordtest.exe
+csc threadcoordtest.cs worker.cs
+threadcoordtest.exe
+csc threadcoordtest.cs worker.cs
+threadcoordtest.exe
+csc threadcoordtest.cs worker.cs
+threadcoordtest.exe
+csc threadcoordtest.cs worker.cs
+threadcoordtest.exe
+np tasktest1.cs
+csc tasktest1.cs
+csc tasktest1.cs worker.cs
+tasktest1.exe
+csc tasktest1.cs worker.cs
+tasktest1.exe
+np tasktest2.cs
+csc tasktest2.cs worker.cs
+tasktest2.exe
+csc tasktest2.cs worker.cs
+tasktest2.exe
+csc tasktest2.cs worker.cs
+tasktest2.exe
+csc tasktest2.cs worker.cs
+tasktest2.exe
+np paralleltest1.cs
+csc paralleltest1.cs worker.cs
+paralleltest1.exe
+csc paralleltest1.cs worker.cs
+paralleltest1.exe
+csc /d:NOPARALLEL paralleltest1.cs worker.cs
+paralleltest1.exe
+csc paralleltest1.cs worker.cs
+paralleltest1.exe
+copy paralleltest1.cs paralleltest2.cs

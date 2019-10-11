@@ -1,0 +1,50 @@
+move hr.cs xmlhr.cs
+csc /t:library xmlhr.cs
+np xmlhr.cs
+copy objsertest.cs xmlsertest.cs
+np xmlsertest.cs
+csc xmlsertest.cs /r:xmlhr.dll
+xmlsertest.exe Accounting
+xmlsertest.exe 
+dir
+np dept.xml
+np xmlhr.cs
+csc /t:library xmlhr.cs
+xmlsertest.exe Accounting
+xmlsertest.exe 
+np dept.xml
+np xmllinqtest.cs
+csc xmllinqtest.cs
+xmllinqtest.exe
+xmllinqtest.exe 3
+xmllinqtest.exe 4
+doskey /history > cmd-12-09-2019.txt
+np data1.txt
+np readwritetest1.cs
+csc readwritetest1.cs
+readwritetest1.exe HDD 4999.95 20000
+csc readwritetest1.cs
+readwritetest1.exe HDD 4999.95 20000
+readwritetest1.exe
+dir
+np product.dat
+copy readwritetest1.cs readwritetest2.cs
+np readwritetest2.cs
+csc readwritetest2.cs
+readwritetest2.exe HDD 4999.95 20000
+readwritetest2.exe
+np product.txt
+dir product.*
+np hr.cs
+copy hr.cs serhr.cs
+np serhr.cs
+csc /t:library serhr.cs
+np objsertest.cs
+csc objsertest.cs /r:serhr.dll
+objsertest.exe Accounting
+objsertest.exe 
+dir
+np dept.dat
+csc /t:library serhr.cs
+objsertest.exe Accounting
+objsertest.exe

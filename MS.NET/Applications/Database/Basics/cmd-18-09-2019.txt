@@ -1,0 +1,37 @@
+cd MS.NET\Applications
+md Database
+cd Database
+\init.cmd
+s:
+md Basics
+cd Basics
+np dbquerytest.cs
+csc dbquerytest.cs
+np dbquerytest.exe.config
+dbquerytest.exe
+dir
+dbquerytest.exe
+np dbquerytest.exe.config
+dbquerytest.exe
+np sqlupdatetest.cs
+csc sqlupdatetest.cs
+sqlupdatetest.exe 103
+sqlupdatetest.exe 101
+sqlupdatetest.exe 109
+csc sqlupdatetest.cs
+sqlupdatetest.exe 104
+copy sqlupdatetest.cs sqlparamtest.cs
+np sqlparamtest.cs
+csc sqlparamtest.cs
+sqlparamtest.exe CU101 104 6
+sqlparamtest.exe CU103 106 5
+sqlparamtest.exe CU103 105 5
+np Shop.sql
+copy sqlparamtest.cs sqlstorproctest.cs
+np sqlstorproctest.cs
+np Shop.sql
+csc sqlstorproctest.cs
+sqlparamtest.exe CU102 102 4
+sqlparamtest.exe CU106 101 7
+sqlparamtest.exe CU103 101 7
+doskey /history > cmd-18-09-2019.txt

@@ -1,0 +1,6 @@
+E:\MS.NET\Applications\Database\EFDesignerTest\Sales\bin\Debug\Sales.dll
+E:\MS.NET\Applications\Database\EFDesignerTest\Sales\bin\Debug\Sales.pdb
+E:\MS.NET\Applications\Database\EFDesignerTest\Sales\obj\Debug\Sales.csprojAssemblyReference.cache
+E:\MS.NET\Applications\Database\EFDesignerTest\Sales\obj\Debug\Sales.csproj.CoreCompileInputs.cache
+E:\MS.NET\Applications\Database\EFDesignerTest\Sales\obj\Debug\Sales.dll
+E:\MS.NET\Applications\Database\EFDesignerTest\Sales\obj\Debug\Sales.pdb

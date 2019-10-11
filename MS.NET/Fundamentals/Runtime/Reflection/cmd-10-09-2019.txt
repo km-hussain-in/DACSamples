@@ -1,0 +1,50 @@
+asmloadtest.exe objaccesstest.exe
+asmloadtest.exe payroll
+asmloadtest.exe payroll,version=1.0.0.0,publickeytoken=8cd3c755a31ade05,culture=neutral
+csc asmloadtest.cs
+asmloadtest.exe finance
+asmloadtest.exe objaccesstest.exe
+asmloadtest.exe earlybindtest
+np dynamictest.cs
+csc dynamictest.cs
+dynamictest.exe FormalGreeter
+dynamictest.exe CasualGreeter
+csc dynamictest.cs
+dynamictest.exe FormalGreeter
+csc dynamictest.cs
+dynamictest.exe FormalGreeter
+csc dynamictest.cs
+dynamictest.exe FormalGreeter
+dynamictest.exe CasualGreeter
+doskey /history > cmd-10-09-2019.txt
+objaccesstest.exe
+del payroll.dll
+objaccesstest.exe
+csc payroll.cs /t:library
+objaccesstest.exe
+ildasm objaccesstest.exe
+np payroll.cs
+csc payroll.cs /t:library
+csc objaccesstest.cs interval.cs /r:payroll.dll
+ildasm objaccesstest.exe
+csc payroll.cs /t:library
+csc objaccesstest.cs interval.cs /r:payroll.dll
+ildasm objaccesstest.exe
+sn -T payroll.dll
+sn -T c:\Windows\Microsoft.NET\Framework64\v4.0.30319\mscorlib.dll
+ildasm objaccesstest.exe
+gacutil /i payroll.dll
+sn -k met.snk
+csc payroll.cs /t:library /keyfile:met.snk
+sn -T payroll.dll
+csc objaccesstest.cs interval.cs /r:payroll.dll
+ildasm objaccesstest.exe
+gacutil /i payroll.dll
+tree /F c:\Windows\Microsoft.NET\assembly\GAC_MSIL\payroll
+ildasm objaccesstest.exe
+del payroll.dll
+objaccesstest.exe
+sn -T payroll.dll
+np asmloadtest.cs
+csc asmloadtest.cs
+asmloadtest.exe finance

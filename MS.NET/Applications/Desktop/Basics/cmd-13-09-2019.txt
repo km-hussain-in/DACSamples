@@ -1,0 +1,37 @@
+cd MS.NET
+md Applications
+cd Applications
+md Desktop
+cd Desktop
+\init.cmd
+s:
+md Basics
+cd Basics
+np winplaintest.cs
+csc winplaintest.cs
+winplaintest.exe
+csc winplaintest.cs
+winplaintest.exe
+dumpbin /headers c:\Windows\System32\notepad.exe
+dumpbin /headers winplaintest.exe
+csc winplaintest.cs /target:winexe
+dumpbin /headers winplaintest.exe
+copy winplaintest.cs winpainttest.cs
+np winpainttest.cs
+csc winpainttest.cs /t:winexe
+copy winpainttest.cs winchildtest.cs
+np winchildtest.cs
+copy winplaintest.cs winchildtest.cs
+y
+np winchildtest.cs
+csc winchildtest.cs /t:winexe
+doskey /history > cmd-13-09-2019.txt
+cd MS.NET\Applications\Desktop
+\init.cmd
+s:
+cd Basics
+np winchildtest.cs
+np e:\MS.NET\Fundamentals\Platform\Concurrency\tasktest2.cs
+copy e:\MS.NET\Fundamentals\Platform\Concurrency\worker.cs
+csc winchildtest.cs worker.cs /t:winexe
+doskey /history >> cmd-13-09-2019.txt

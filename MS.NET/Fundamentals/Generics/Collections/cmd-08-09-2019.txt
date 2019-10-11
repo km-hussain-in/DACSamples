@@ -1,0 +1,50 @@
+dicttest1.exe
+csc dicttest1.cs interval.cs
+dicttest1.exe tuesday
+dicttest1.exe friday
+dicttest1.exe sunday
+dicttest1.exe MONDAY
+copy dicttest1.cs dicttest2.cs
+np dicttest2.cs
+csc dicttest2.cs interval.cs
+dicttest2.exe
+dicttest2.exe tuesday
+dicttest2.exe sunday
+copy dicttest2.cs dicttest3.cs
+np dicttest3.cs
+csc dicttest3.cs interval.cs
+dicttest3.exe
+dicttest3.exe wednesday
+dicttest3.exe saturday
+doskey /history cmd-08-09-2019.txt
+doskey /history > cmd-08-09-2019.txt
+nullvaltest.exe john
+nullvaltest.exe jeff
+csc nullvaltest.cs
+nullvaltest.exe jill
+csc nullvaltest.cs
+nullvaltest.exe jill
+nullvaltest.exe john
+nullvaltest.exe jeff
+cd ..
+md Collections
+cd Collections
+copy ..\Basics\interval.cs
+np listtest.cs
+csc listtest.cs interval.cs
+listtest.exe
+csc listtest.cs interval.cs
+listtest.exe
+copy listtest.cs settest1.cs
+np settest1.cs
+csc settest1.cs interval.cs
+settest1.exe
+copy settest1.cs settest2.cs
+np settest2.cs
+csc settest2.cs interval.cs
+settest2.exe
+csc settest2.cs interval.cs
+settest2.exe
+copy settest1.cs dicttest1.cs
+np dicttest1.cs
+csc dicttest1.cs interval.cs

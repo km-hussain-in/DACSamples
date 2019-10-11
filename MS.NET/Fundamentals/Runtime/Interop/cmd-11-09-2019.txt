@@ -1,0 +1,22 @@
+cd MS.NET\Fundamentals\Runtime
+\init.cmd
+s:
+cd Interop
+np legacy\include\invest.h
+copy pinvoketest1.cs pinvoketest3.cs
+np pinvoketest3.cs
+csc pinvoketest3.cs
+pinvoketest3.exe 75000 4
+csc pinvoketest3.cs
+pinvoketest3.exe 75000 4
+guidgen
+legacy\bin\quadeq.exe
+np legacy\include\quadeq.idl
+tlbimp /machine:x64 legacy\bin\quadeq.exe
+ildasm QuadEq.dll
+np cominteroptest1.cs
+ildasm QuadEq.dll
+csc cominteroptest1.cs /r:QuadEq.dll
+cominteroptest1.exe 24 35
+cominteroptest1.exe 18 23
+doskey /history > cmd-11-09-2019.txt

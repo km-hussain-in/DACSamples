@@ -1,0 +1,10 @@
+E:\MS.NET\Applications\Desktop\WinDesignerTest\ComponentApp\bin\Debug\ComponentApp.exe.config
+E:\MS.NET\Applications\Desktop\WinDesignerTest\ComponentApp\bin\Debug\ComponentApp.exe
+E:\MS.NET\Applications\Desktop\WinDesignerTest\ComponentApp\bin\Debug\ComponentApp.pdb
+E:\MS.NET\Applications\Desktop\WinDesignerTest\ComponentApp\obj\Debug\ComponentApp.csprojAssemblyReference.cache
+E:\MS.NET\Applications\Desktop\WinDesignerTest\ComponentApp\obj\Debug\ComponentApp.MainForm.resources
+E:\MS.NET\Applications\Desktop\WinDesignerTest\ComponentApp\obj\Debug\ComponentApp.Properties.Resources.resources
+E:\MS.NET\Applications\Desktop\WinDesignerTest\ComponentApp\obj\Debug\ComponentApp.csproj.GenerateResource.cache
+E:\MS.NET\Applications\Desktop\WinDesignerTest\ComponentApp\obj\Debug\ComponentApp.csproj.CoreCompileInputs.cache
+E:\MS.NET\Applications\Desktop\WinDesignerTest\ComponentApp\obj\Debug\ComponentApp.exe
+E:\MS.NET\Applications\Desktop\WinDesignerTest\ComponentApp\obj\Debug\ComponentApp.pdb

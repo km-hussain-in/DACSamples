@@ -1,0 +1,14 @@
+E:\MS.NET\Applications\Database\EFDesignerTest\MiddleTier\bin\Debug\MiddleTier.exe.config
+E:\MS.NET\Applications\Database\EFDesignerTest\MiddleTier\bin\Debug\MiddleTier.exe
+E:\MS.NET\Applications\Database\EFDesignerTest\MiddleTier\bin\Debug\MiddleTier.pdb
+E:\MS.NET\Applications\Database\EFDesignerTest\MiddleTier\bin\Debug\EntityFramework.dll
+E:\MS.NET\Applications\Database\EFDesignerTest\MiddleTier\bin\Debug\EntityFramework.SqlServer.dll
+E:\MS.NET\Applications\Database\EFDesignerTest\MiddleTier\bin\Debug\Sales.dll
+E:\MS.NET\Applications\Database\EFDesignerTest\MiddleTier\bin\Debug\Sales.pdb
+E:\MS.NET\Applications\Database\EFDesignerTest\MiddleTier\bin\Debug\EntityFramework.xml
+E:\MS.NET\Applications\Database\EFDesignerTest\MiddleTier\bin\Debug\EntityFramework.SqlServer.xml
+E:\MS.NET\Applications\Database\EFDesignerTest\MiddleTier\obj\Debug\MiddleTier.csprojAssemblyReference.cache
+E:\MS.NET\Applications\Database\EFDesignerTest\MiddleTier\obj\Debug\MiddleTier.csproj.CoreCompileInputs.cache
+E:\MS.NET\Applications\Database\EFDesignerTest\MiddleTier\obj\Debug\MiddleTier.csproj.CopyComplete
+E:\MS.NET\Applications\Database\EFDesignerTest\MiddleTier\obj\Debug\MiddleTier.exe
+E:\MS.NET\Applications\Database\EFDesignerTest\MiddleTier\obj\Debug\MiddleTier.pdb

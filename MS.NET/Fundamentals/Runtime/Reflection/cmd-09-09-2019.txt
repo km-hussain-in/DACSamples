@@ -1,0 +1,50 @@
+csc objaccesstest.cs interval.cs /r:payroll.dll
+np interval.cs
+objaccesstest.exe
+csc objaccesstest.cs interval.cs /r:payroll.dll
+objaccesstest.exe
+csc objaccesstest.cs interval.cs /r:payroll.dll
+objaccesstest.exe
+np interval.cs
+csc objaccesstest.cs interval.cs /r:payroll.dll
+objaccesstest.exe
+np finance.c
+np finance.cs
+csc finance.cs /t:library
+np earlybindtest.cs
+csc earlybindtest.cs /r:finance.dll
+earlybindtest.exe 500000
+csc earlybindtest.cs /r:finance.dll
+earlybindtest.exe 500000
+earlybindtest.exe 500000 Finance.EducationLoan,finance
+earlybindtest.exe 500000 Finance.HomeLoan,finance
+earlybindtest.exe 500000 Finance.BusinessLoan,finance
+copy earlybindtest.cs latebindtest1.cs
+np latebindtest1.cs
+csc latebindtest1.cs
+latebindtest1.exe 500000 EducationLoan GetInterestRate 
+latebindtest1.exe 500000 PersonalLoan GetInterestRateForEmployees 
+latebindtest1.exe 500000 BusinessLoan RateOfInterest
+copy latebindtest1.cs latebindtest2.cs
+np latebindtest2.cs
+csc latebindtest2.cs
+latebindtest2.exe 500000 EducationLoan GetInterestRate 
+latebindtest2.exe 500000 PersonalLoan GetInterestRateForEmployees 
+ildasm latebindtest2.exe
+csc latebindtest2.cs
+latebindtest2.exe 500000 EducationLoan GetInterestRate 
+ildasm latebindtest2.exe
+doskey /history > cmd-09-09-2019.txt
+s:
+cls
+copy E:..\..\Language\OOP\interval.cs
+copy E:..\..\Language\OOP\payroll2.cs payroll.cs
+csc /t:library payroll.cs
+np objaccesstest.cs
+csc objaccesstest.cs /r:payroll.dll
+objaccesstest.exe
+csc objaccesstest.cs /r:payroll.dll
+csc objaccesstest.cs interval.cs /r:payroll.dll
+np interval.cs
+csc objaccesstest.cs interval.cs /r:payroll.dll
+objaccesstest.exe

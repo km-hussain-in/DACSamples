@@ -1,0 +1,50 @@
+ildasm c:\Windows\Microsoft.NET\Framework64\v4.0.30319\mscorlib.dll
+csc objequalitytest.cs interval.cs
+objequalitytest.exe
+np banking1.cs
+csc banking1.cs /t:library
+doskey /history > cmd-05-09-2019.txt
+cd OOP
+dir
+np payroll1.cs
+csc payroll1.cs /t:library
+np baseclasstest1.cs
+csc baseclasstest1.cs
+csc baseclasstest1.cs /r:payroll1.dll
+baseclasstest1.exe
+copy payroll1.cs payroll2.cs
+payroll2.cs
+np payroll2.cs
+csc payroll2.cs /t:library
+csc baseclasstest1.cs /r:payroll2.dll
+baseclasstest1.exe
+csc payroll2.cs /t:library
+baseclasstest1.exe
+csc payroll2.cs /t:library
+baseclasstest1.exe
+copy baseclasstest1.cs baseclasstest2.cs
+np baseclasstest2.cs
+csc baseclasstest2.cs /r:payroll2.dll
+baseclasstest2.exe
+csc baseclasstest2.cs /r:payroll2.dll
+baseclasstest2.exe
+csc baseclasstest2.cs /r:payroll2.dll
+baseclasstest2.exe
+csc baseclasstest2.cs /r:payroll2.dll
+baseclasstest2.exe
+doskey /history > cmd-05-09-2019.txt
+copy ..\Basics\operatortest.cs interval.cs
+np interval.cs
+np objequalitytest.cs
+csc objequalitytest.cs interval.cs
+objequalitytest.exe
+csc /d:TESTING objequalitytest.cs interval.cs
+objequalitytest.exe
+csc objequalitytest.cs interval.cs
+objequalitytest.exe
+csc objequalitytest.cs interval.cs
+ildasm c:\Windows\Microsoft.NET\Framework64\v4.0.30319\mscorlib.dll
+csc objequalitytest.cs interval.cs
+objequalitytest.exe
+csc objequalitytest.cs interval.cs
+objequalitytest.exe

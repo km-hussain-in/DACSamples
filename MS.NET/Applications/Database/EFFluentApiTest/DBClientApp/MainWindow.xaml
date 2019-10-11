@@ -1,0 +1,27 @@
+﻿<Window x:Class="DBClientApp.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:DBClientApp"
+        mc:Ignorable="d"   
+        d:DataContext="{d:DesignInstance local:CustomerViewModel}"
+        Title="DBClientApp" Height="300" Width="300">
+
+    <StackPanel>
+        <ComboBox Margin="10" ItemsSource="{Binding Customers}" DisplayMemberPath="CustomerId" SelectedItem="{Binding Current}"/>
+        <DockPanel Margin="5">
+            <TextBlock Margin="5" DockPanel.Dock="Left" Text="Credit:"/>
+            <Button Margin="5" DockPanel.Dock="Right" Content="Update" Command="{Binding Update}"/>
+            <TextBox Margin="5" Text="{Binding Current.Credit, UpdateSourceTrigger=PropertyChanged}"/>
+        </DockPanel>
+        <DataGrid Margin="10" HorizontalAlignment="Center" IsReadOnly="True" MaxHeight="120" AutoGenerateColumns="False" ItemsSource="{Binding Current.Orders}">
+            <DataGrid.Columns>
+                <DataGridTextColumn Header="Product No" Binding="{Binding ProductNo}"/>
+                <DataGridTextColumn Header="Quantity" Binding="{Binding Quantity}"/>
+                <DataGridTextColumn Header="Order Date" Binding="{Binding OrderDate}"/>
+            </DataGrid.Columns>
+        </DataGrid>
+    </StackPanel>
+   
+</Window>

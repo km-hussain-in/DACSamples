@@ -1,0 +1,40 @@
+﻿@model IEnumerable<ServerApp.Models.Visitor>
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>ServerApp</title>
+</head>
+<body>
+    <h1>Our Visitors</h1>
+    <table border="1">
+        <tr>
+            <th>Visitor Name</th>
+            <th>Visit Count</th>
+            <th>Last Visit</th>
+        </tr>
+        @foreach(var entry in Model)
+        {
+        <tr>
+            <td>
+                @Html.DisplayFor(x => entry.Name)
+            </td>
+            <td>
+                @Html.DisplayFor(x => entry.Frequency)
+            </td>
+            <td>
+                @Html.DisplayFor(x => entry.Recent)
+            </td>
+        </tr>
+        }
+    </table>
+    <p>
+        @Html.ActionLink("Register Your Visit", "Register")
+    </p>
+</body>
+</html>

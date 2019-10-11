@@ -1,0 +1,56 @@
+cd MS.NET\Applications
+md Distributed
+cd Distributed
+\init.cmd
+s:
+md Basics
+cd Basics
+np tcplistenertest.cs
+csc tcplistenertest.cs
+start tcplistenertest.exe
+netstat /noa
+tcplistenertest.exe
+telnet localhost 4010
+csc tcplistenertest.cs
+start tcplistenertest.exe
+telnet localhost 4010
+ping 192.168.21.185
+ping ioe-cdac-185
+ping 192.168.21.164
+telnet 192.168.21.164 4010
+csc tcplistenertest.cs
+telnet 192.168.21.164 4010
+csc tcplistenertest.cs
+telnet 192.168.21.164 4010
+np tcpclienttest.cs
+csc tcpclienttest.cs
+tcpclienttest hdd 192.168.21.164
+tcpclienttest shoes 192.168.21.164
+start tcplistenertest.exe
+tcpclienttest hdd
+np udpclienttest1.cs
+csc udpclienttest1.cs
+start udpclienttest1.exe
+copy udpclienttest1.cs udpclienttest2.cs
+np udpclienttest2.cs
+csc udpclienttest2.cs
+udpclienttest2.exe
+doskey /history > cmd-15-09-2019.txt
+s:
+cd Basics
+doskey np=notepad $*
+np tcplistenertest.cs
+np httplistenertest.cs
+csc httplistenertest.cs
+start httplistenertest.exe
+netstat /noa
+csc httplistenertest.cs
+start httplistenertest.exe
+np webclienttest.cs
+csc webclienttest.cs
+webclienttest.exe ram
+webclienttest.exe mouse
+webclienttest.exe phone
+np httplistenertest.cs
+netstat /noa
+doskey /history >> cmd-15-09-2019.txt

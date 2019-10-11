@@ -1,0 +1,11 @@
+E:\MS.NET\Applications\Database\DSDataBindTest\DBClientApp\bin\Debug\DBClientApp.exe.config
+E:\MS.NET\Applications\Database\DSDataBindTest\DBClientApp\bin\Debug\DBClientApp.exe
+E:\MS.NET\Applications\Database\DSDataBindTest\DBClientApp\bin\Debug\DBClientApp.pdb
+E:\MS.NET\Applications\Database\DSDataBindTest\DBClientApp\obj\Debug\DBClientApp.csprojAssemblyReference.cache
+E:\MS.NET\Applications\Database\DSDataBindTest\DBClientApp\obj\Debug\DBClientApp.MainForm.resources
+E:\MS.NET\Applications\Database\DSDataBindTest\DBClientApp\obj\Debug\DBClientApp.Properties.Resources.resources
+E:\MS.NET\Applications\Database\DSDataBindTest\DBClientApp\obj\Debug\DBClientApp.csproj.GenerateResource.cache
+E:\MS.NET\Applications\Database\DSDataBindTest\DBClientApp\obj\Debug\DBClientApp.csproj.CoreCompileInputs.cache
+E:\MS.NET\Applications\Database\DSDataBindTest\DBClientApp\obj\Debug\DBClientApp.exe
+E:\MS.NET\Applications\Database\DSDataBindTest\DBClientApp\obj\Debug\DBClientApp.pdb
+E:\MS.NET\Applications\Database\DSDataBindTest\DBClientApp\obj\Debug\DBClientApp.InvoiceForm.resources

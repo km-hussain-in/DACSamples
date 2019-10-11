@@ -1,0 +1,25 @@
+cd MS.NET\Fundamentals\Language
+subst s: .
+s:
+doskey np=notepad $*
+cd OOP
+np abstractclasstest.cs
+csc abstractclasstest.cs /r:banking1.dll
+csc abstractclasstest.cs banking1.cs
+csc abstractclasstest.cs /r:banking1.dll
+abstractclasstest.exe 3000
+csc abstractclasstest.cs /r:banking1.dll
+abstractclasstest.exe 3000
+abstractclasstest.exe 17000
+abstractclasstest.exe 3OOO
+abstractclasstest.exe
+copy banking1.cs banking2.cs
+np banking2.cs
+np interfacetest1.cs
+csc banking2.cs /t:library
+csc interfacetest1.cs /r:banking2.dll
+interfacetest1.exe
+csc interfacetest1.cs /r:banking2.dll
+interfacetest1.exe
+np interfacetest2.cs
+doskey /history > cmd-06-09-2019.txt

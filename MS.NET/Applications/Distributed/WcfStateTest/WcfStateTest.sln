@@ -1,0 +1,37 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29306.81
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Shopping", "Shopping\Shopping.csproj", "{16455434-1191-4F7F-B219-2BE11918F1DE}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ServerApp", "ServerApp\ServerApp.csproj", "{3FA15790-010B-4116-90DB-8FC2FD47C1B7}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ClientApp", "ClientApp\ClientApp.csproj", "{3181107B-1649-4AC7-A05D-129EC38635A8}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{16455434-1191-4F7F-B219-2BE11918F1DE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{16455434-1191-4F7F-B219-2BE11918F1DE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{16455434-1191-4F7F-B219-2BE11918F1DE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{16455434-1191-4F7F-B219-2BE11918F1DE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3FA15790-010B-4116-90DB-8FC2FD47C1B7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3FA15790-010B-4116-90DB-8FC2FD47C1B7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3FA15790-010B-4116-90DB-8FC2FD47C1B7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3FA15790-010B-4116-90DB-8FC2FD47C1B7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3181107B-1649-4AC7-A05D-129EC38635A8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3181107B-1649-4AC7-A05D-129EC38635A8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3181107B-1649-4AC7-A05D-129EC38635A8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3181107B-1649-4AC7-A05D-129EC38635A8}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {7DAF42FC-EF63-434F-989B-22D2CB97C305}
+	EndGlobalSection
+EndGlobal

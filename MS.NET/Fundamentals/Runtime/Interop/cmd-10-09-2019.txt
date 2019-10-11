@@ -1,0 +1,50 @@
+csc pinvoketest2.cs
+pinvoketest2.exe monday
+csc /platform:x86 pinvoketest2.cs
+pinvoketest2.exe monday
+pinvoketest2.exe sunday
+csc /platform:x86 pinvoketest2.cs
+pinvoketest2.exe monday
+pinvoketest2.exe NLMGBZ
+doskey /history > cmd-10-09-2019.txt
+dynamictest.exe FormalGreeter
+dynamictest.exe CasualGreeter
+csc dynamictest.cs
+dynamictest.exe FormalGreeter
+csc dynamictest.cs
+dynamictest.exe FormalGreeter
+csc dynamictest.cs
+dynamictest.exe FormalGreeter
+dynamictest.exe CasualGreeter
+doskey /history > cmd-10-09-2019.txt
+cd ..
+mkdir Interop
+cd Interop
+np legacy\squaring.c
+copy legacy\squaring.c ptrtypetest.cs
+np ptrtypetest.cs
+csc ptrtypetest.cs
+csc /unsafe ptrtypetest.cs
+ptrtypetest.exe
+csc /unsafe ptrtypetest.cs
+ptrtypetest.exe
+legacy\setup.bat
+np legacy\include\taxation.h
+np ijwtaxation.cpp
+cl /CLR /LD ijwtaxation.cpp legacy\bin\taxation.obj
+dir
+np mixmodeasmtest.cs
+csc mixmodeasmtest.cs /r:ijwtaxation.dll
+mixmodeasmtest.exe 240000 23
+mixmodeasmtest.exe 300000 23
+mixmodeasmtest.exe 800000 23
+mixmodeasmtest.exe 1800000 23
+mixmodeasmtest.exe 800000 63
+mixmodeasmtest.exe 800000 83
+np legacy\include\asset.h
+np pinvoketest1.cs
+csc pinvoketest1.cs
+pinvoketest1.exe 25000 5
+np legacy\include\hashenc.h
+copy pinvoketest1.cs pinvoketest2.cs
+np pinvoketest2.cs

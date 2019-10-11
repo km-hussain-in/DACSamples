@@ -1,0 +1,32 @@
+cd 
+cd MS.NET\Applications\Web
+\init.cmd
+s:
+cd Basics
+start server
+cd Bin
+np basicwebapp.cs
+csc /t:library basicwebapp.cs
+np ..\web.config
+csc /t:library basicwebapp.cs
+cd ..
+copy welcome.html formpost.html
+np formpost.html
+cd Bin
+csc /t:library basicwebapp.cs
+cd ..
+np state.ashx
+csc /t:library basicwebapp.cs
+cd Bin
+csc /t:library basicwebapp.cs
+cd ..
+copy welcome.html webctrltest.html
+ren webctrltest.html webctrltest.aspx
+np webctrltest.aspx
+np webctrltest.aspx.cs
+cd Bin
+np basicwebapp.cs
+csc /t:library basicwebapp.cs
+cd ..
+cd Bin
+doskey /history > cmd-17-09-2019.txt

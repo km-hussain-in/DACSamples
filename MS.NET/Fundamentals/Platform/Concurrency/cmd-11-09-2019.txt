@@ -1,0 +1,50 @@
+doskey /history > cmd-11-09-2019.txt
+cd Interop
+np legacy\aircargo.wsc
+doskey np=notepad $*
+np legacy\aircargo.wsc
+np cominteroptest3.cs
+csc cominteroptest3.cs
+cominteroptest3.exe 6 700
+e:
+cd MS.NET\Fundamentals
+md Platform
+cd Platform
+\init.cmd
+s:
+md Concurrency
+cd Concurrency
+np worker.cs
+np threadtest.cs
+csc threadtest.cs
+csc threadtest.cs worker.cs
+threadtest.exe
+threadtest.exe 7
+csc threadtest.cs worker.cs
+threadtest.exe
+csc threadtest.cs worker.cs
+threadtest.exe
+threadtest.exe 7
+csc threadtest.cs worker.cs
+threadtest.exe
+threadtest.exe 7
+csc threadtest.cs worker.cs
+threadtest.exe
+threadtest.exe 6
+threadtest.exe 8
+threadtest.exe 9
+csc threadtest.cs worker.cs
+threadtest.exe
+threadtest.exe 6
+np threadsynctest.cs
+csc threadsynctest.cs worker.cs
+threadsynctest.exe
+csc threadsynctest.cs worker.cs
+threadsynctest.exe
+np worker.cs
+csc threadsynctest.cs worker.cs
+threadsynctest.exe
+csc threadsynctest.cs worker.cs
+threadsynctest.exe
+csc threadsynctest.cs worker.cs
+threadsynctest.exe
