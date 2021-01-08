@@ -5,19 +5,18 @@ static class Program
 {
 	public static void Main(string[] args)
 	{
-		var model = new SiteModel();
-		Site zoo = model.Sites.Find(s => s.Title == "CityZoo");
+		var store = new SiteStore();
+		Site zoo = store.Sites.Find(s => s.Title == "CityZoo");
 		if(zoo == null)
 		{
 			zoo = new Site {Title = "CityZoo"};
-			model.Sites.Add(zoo);
+			store.Sites.Add(zoo);
 		}
-
 
 		if(args.Length > 0)
 		{
 			zoo.RegisterVisit(args[0]);
-			model.SaveChanges();
+			store.SaveChanges();
 		}
 		else
 		{			
