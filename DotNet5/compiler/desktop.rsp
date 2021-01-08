@@ -1,0 +1,10 @@
+/t:winexe
+/r:"C:\Program Files\dotnet\shared\Microsoft.WindowsDesktop.App\5.0.0\System.Drawing.dll"
+/r:"C:\Program Files\dotnet\shared\Microsoft.WindowsDesktop.App\5.0.0\System.Drawing.Common.dll"
+/r:"C:\Program Files\dotnet\shared\Microsoft.WindowsDesktop.App\5.0.0\System.Windows.Forms.dll"
+/r:"C:\Program Files\dotnet\shared\Microsoft.WindowsDesktop.App\5.0.0\System.Windows.Forms.Primitives.dll"
+/r:"C:\Program Files\dotnet\shared\Microsoft.WindowsDesktop.App\5.0.0\System.Xaml.dll"
+/r:"C:\Program Files\dotnet\shared\Microsoft.WindowsDesktop.App\5.0.0\PresentationCore.dll"
+/r:"C:\Program Files\dotnet\shared\Microsoft.WindowsDesktop.App\5.0.0\PresentationFramework.dll"
+/r:"C:\Program Files\dotnet\shared\Microsoft.WindowsDesktop.App\5.0.0\WindowsBase.dll"
+/nowarn:1701

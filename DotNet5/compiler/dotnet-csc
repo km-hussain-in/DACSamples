@@ -1,0 +1,40 @@
+#!/bin/bash
+
+#dotnethome=`dirname "$0"`
+dotnethome=`dirname \`which dotnet\``
+sdkver=$(dotnet --version)
+fwkver=$(dotnet --list-runtimes | grep Microsoft.NETCore.App | awk '{printf("%s", $2)}')
+dotnetlib=$dotnethome/shared/Microsoft.NETCore.App/$fwkver
+
+if [ "$#" -lt 1 ]; then
+	dotnet $dotnethome/sdk/$sdkver/Roslyn/bincore/csc.dll -help
+	exit 1
+fi
+if ! test -f "csc-$fwkver.rsp"; then
+  echo -r:$dotnetlib/netstandard.dll > /tmp/csc-$fwkver.rsp
+  echo -r:$dotnetlib/Microsoft.CSharp.dll >> /tmp/csc-$fwkver.rsp
+  echo -r:$dotnetlib/System.dll >> /tmp/csc-$fwkver.rsp
+  for f in  $dotnetlib/System.*.dll; do
+	echo -r:$f >> /tmp/csc-$fwkver.rsp
+  done
+fi
+
+progfile=$1
+prog="${progfile%.*}"
+dotnet $dotnethome/sdk/$sdkver/Roslyn/bincore/csc.dll -nologo @/tmp/csc-$fwkver.rsp $* 
+if [ $? -eq 0 ]; then
+  if test -f "$prog.exe"; then
+	if ! test -f "$prog.runtime.config"; then
+		echo "{
+  \"runtimeOptions\": {
+    \"framework\": {
+      \"name\": \"Microsoft.NETCore.App\",
+      \"version\": \"$fwkver\"
+    }
+  }
+}"  > "$prog.runtimeconfig.json"
+	fi
+  fi
+fi
+
+
