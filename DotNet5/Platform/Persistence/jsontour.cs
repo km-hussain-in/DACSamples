@@ -56,11 +56,11 @@ namespace Tourism
 		}
 	}
 
-	public class SiteModel
+	public class SiteStore
 	{
 		public List<Site> Sites { get; set; }
 
-		public SiteModel()
+		public SiteStore()
 		{
 			if(File.Exists("sites.json"))
 			{
