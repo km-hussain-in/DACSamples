@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>RESTWebUI</title>
+    </head>
+    <body>
+        <h1>Welcome Sales Agent</h1>
+		<hr/>
+		<h3>View Customer Orders</h3>
+        <form>
+            <p>
+                <b>Customer ID: </b>
+                <input type="text" id="customerIdInput" required="required"/>
+                <input type="button" id="loadButton" value="Load"/>
+            </p>
+        </form>
+        <p>
+            <span id="statusOutput"></span><br/>
+        </p>
+		<div id="ordersView" style="display:none">
+			<table border="1" id="ordersTable">
+				<thead>
+					<tr>
+						<th>Order Date</th>
+						<th>Product No</th>
+						<th>Quantity</th>
+					</tr>
+	      		</thead>
+		  		<tbody>
+		  		</tbody>
+			</table>
+		</div>
+		<hr/>
+		<a href="neworder.html">Place New Order</p>
+        <script>
+			let ordersTable = document.getElementById("ordersTable");
+			let ordersView = document.getElementById("ordersView");
+            let statusOutput = document.getElementById("statusOutput");
+            let customerIdInput = document.getElementById("customerIdInput");
+
+			function clearOrders() {
+				ordersView.style.display = "none";
+				while(ordersTable.rows.length > 1) ordersTable.deleteRow(1);
+			}
+
+			function loadOrders(entries) {
+                statusOutput.innerText = "Orders of this Customer ";
+				for(const entry of entries) {
+					var row = ordersTable.insertRow();
+					row.insertCell().innerText = entry.orderDate.slice(0, 10);
+					row.insertCell().innerText = entry.productNo;
+					row.insertCell().innerText = entry.quantity;
+				}
+				ordersView.style.display = "block";
+			}
+
+            document.getElementById("loadButton").onclick = async function(){
+				clearOrders();
+                let response = await fetch(`api/orders/${customerIdInput.value}`);
+                if(response.ok){
+                    let result = await response.json();
+					loadOrders(result);
+                }else if(response.status == 404)
+                    statusOutput.innerText = "No such customer";
+            };
+
+        </script>
+    </body>
+</html>
+

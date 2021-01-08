@@ -1,0 +1,61 @@
+[EL Info]: 2021-01-07 08:20:58.678--ServerSession(1187040881)--EclipseLink, version: Eclipse Persistence Services - 2.7.8.v20201217-ecdf3c32c4
+[EL Info]: 2021-01-07 09:47:54.497--ServerSession(560538672)--EclipseLink, version: Eclipse Persistence Services - 2.7.8.v20201217-ecdf3c32c4
+[EL Warning]: 2021-01-07 09:48:15.546--UnitOfWork(260302611)--Exception [EclipseLink-4002] (Eclipse Persistence Services - 2.7.8.v20201217-ecdf3c32c4): org.eclipse.persistence.exceptions.DatabaseException
+Internal Exception: java.sql.SQLIntegrityConstraintViolationException: ORA-02291: integrity constraint (SCOTT.FK_ORDERS_PRODUCTS) violated - parent key not found
+
+Error Code: 2291
+Call: INSERT INTO orders (ord_no, cust_id, ord_date, pno, qty) VALUES (?, ?, ?, ?, ?)
+	bind => [5 parameters bound]
+Query: InsertObjectQuery(shopping.OrderEntity@6b46c72d)
+[EL Info]: 2021-01-07 10:22:47.157--ServerSession(1468520064)--EclipseLink, version: Eclipse Persistence Services - 2.7.8.v20201217-ecdf3c32c4
+[EL Warning]: 2021-01-07 10:22:47.461--UnitOfWork(333517038)--Exception [EclipseLink-4002] (Eclipse Persistence Services - 2.7.8.v20201217-ecdf3c32c4): org.eclipse.persistence.exceptions.DatabaseException
+Internal Exception: java.sql.SQLIntegrityConstraintViolationException: ORA-02291: integrity constraint (SCOTT.FK_ORDERS_PRODUCTS) violated - parent key not found
+
+Error Code: 2291
+Call: INSERT INTO orders (ord_no, cust_id, ord_date, pno, qty) VALUES (?, ?, ?, ?, ?)
+	bind => [5 parameters bound]
+Query: InsertObjectQuery(shopping.OrderEntity@26881583)
+[EL Warning]: 2021-01-07 10:26:47.428--UnitOfWork(1098066150)--Exception [EclipseLink-4002] (Eclipse Persistence Services - 2.7.8.v20201217-ecdf3c32c4): org.eclipse.persistence.exceptions.DatabaseException
+Internal Exception: java.sql.SQLIntegrityConstraintViolationException: ORA-02291: integrity constraint (SCOTT.FK_ORDERS_PRODUCTS) violated - parent key not found
+
+Error Code: 2291
+Call: INSERT INTO orders (ord_no, cust_id, ord_date, pno, qty) VALUES (?, ?, ?, ?, ?)
+	bind => [5 parameters bound]
+Query: InsertObjectQuery(shopping.OrderEntity@33740467)
+[EL Warning]: 2021-01-07 10:27:08.86--UnitOfWork(1204158557)--Exception [EclipseLink-4002] (Eclipse Persistence Services - 2.7.8.v20201217-ecdf3c32c4): org.eclipse.persistence.exceptions.DatabaseException
+Internal Exception: java.sql.SQLIntegrityConstraintViolationException: ORA-02291: integrity constraint (SCOTT.FK_ORDERS_CUSTOMERS) violated - parent key not found
+
+Error Code: 2291
+Call: INSERT INTO orders (ord_no, cust_id, ord_date, pno, qty) VALUES (?, ?, ?, ?, ?)
+	bind => [5 parameters bound]
+Query: InsertObjectQuery(shopping.OrderEntity@28abe158)
+[EL Info]: 2021-01-07 11:24:19.231--ServerSession(847978132)--EclipseLink, version: Eclipse Persistence Services - 2.7.8.v20201217-ecdf3c32c4
+[EL Warning]: 2021-01-07 11:24:27.09--UnitOfWork(734411556)--Exception [EclipseLink-4002] (Eclipse Persistence Services - 2.7.8.v20201217-ecdf3c32c4): org.eclipse.persistence.exceptions.DatabaseException
+Internal Exception: java.sql.SQLIntegrityConstraintViolationException: ORA-02291: integrity constraint (SCOTT.FK_ORDERS_PRODUCTS) violated - parent key not found
+
+Error Code: 2291
+Call: INSERT INTO orders (ord_no, cust_id, ord_date, pno, qty) VALUES (?, ?, ?, ?, ?)
+	bind => [5 parameters bound]
+Query: InsertObjectQuery(shopping.OrderEntity@1f3f0e90)
+[EL Warning]: 2021-01-07 11:24:37.134--UnitOfWork(2010316393)--Exception [EclipseLink-4002] (Eclipse Persistence Services - 2.7.8.v20201217-ecdf3c32c4): org.eclipse.persistence.exceptions.DatabaseException
+Internal Exception: java.sql.SQLIntegrityConstraintViolationException: ORA-02291: integrity constraint (SCOTT.FK_ORDERS_PRODUCTS) violated - parent key not found
+
+Error Code: 2291
+Call: INSERT INTO orders (ord_no, cust_id, ord_date, pno, qty) VALUES (?, ?, ?, ?, ?)
+	bind => [5 parameters bound]
+Query: InsertObjectQuery(shopping.OrderEntity@f44a6b6)
+[EL Warning]: 2021-01-07 11:27:38.414--UnitOfWork(1661051200)--Exception [EclipseLink-4002] (Eclipse Persistence Services - 2.7.8.v20201217-ecdf3c32c4): org.eclipse.persistence.exceptions.DatabaseException
+Internal Exception: java.sql.SQLIntegrityConstraintViolationException: ORA-02291: integrity constraint (SCOTT.FK_ORDERS_PRODUCTS) violated - parent key not found
+
+Error Code: 2291
+Call: INSERT INTO orders (ord_no, cust_id, ord_date, pno, qty) VALUES (?, ?, ?, ?, ?)
+	bind => [5 parameters bound]
+Query: InsertObjectQuery(shopping.OrderEntity@52f2f379)
+[EL Warning]: 2021-01-07 11:27:47.184--UnitOfWork(578106857)--Exception [EclipseLink-4002] (Eclipse Persistence Services - 2.7.8.v20201217-ecdf3c32c4): org.eclipse.persistence.exceptions.DatabaseException
+Internal Exception: java.sql.SQLIntegrityConstraintViolationException: ORA-02291: integrity constraint (SCOTT.FK_ORDERS_CUSTOMERS) violated - parent key not found
+
+Error Code: 2291
+Call: INSERT INTO orders (ord_no, cust_id, ord_date, pno, qty) VALUES (?, ?, ?, ?, ?)
+	bind => [5 parameters bound]
+Query: InsertObjectQuery(shopping.OrderEntity@1b93d7c2)
+[EL Info]: 2021-01-07 12:21:34.795--ServerSession(1704601648)--EclipseLink, version: Eclipse Persistence Services - 2.7.8.v20201217-ecdf3c32c4

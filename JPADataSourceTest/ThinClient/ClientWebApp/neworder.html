@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>RESTWebUI</title>
+    </head>
+    <body>
+        <h1>Welcome Sales Agent</h1>
+		<hr/>
+		<h3>Place New Order</h3>
+        <form>
+            <p>
+                <b>Customer ID</b><br/>
+                <input type="text" id="customerIdInput" required="required"/>
+            </p>
+            <p>
+                <b>Product No</b><br/>
+                <input type="number" id="productNoInput" required="required"/>
+            </p>
+            <p>
+                <b>Quantity</b><br/>
+                <input type="number" id="quantityInput" required="required"/>
+            </p>
+	    	<input type="button" id="orderButton" value="Order"/>
+        </form>
+        <p>
+            <span id="statusOutput"></span><br/>
+        </p>
+		<hr/>
+		<a href="vieworders.html">View Customer Orders</p>
+        <script>
+            let customerIdInput = document.getElementById("customerIdInput");
+            let productNoInput = document.getElementById("productNoInput");
+            let quantityInput = document.getElementById("quantityInput");
+            let statusOutput = document.getElementById("statusOutput");
+            document.getElementById("orderButton").onclick = async function(){
+                const request = {
+                    method: 'post',
+                    headers: {'Content-Type': 'application/json'},
+                    body: JSON.stringify({
+                        customerId: customerIdInput.value,
+                        productNo: new Number(productNoInput.value),
+                        quantity: new Number(quantityInput.value)
+                    })
+                };
+                let response = await fetch("api/orders/", request);
+                if(response.status == 201){
+					let result = await response.json();
+                    statusOutput.innerText = "New order number is " + result.orderNo;
+				}
+                else{
+					let result = await response.text();
+                    statusOutput.innerText = result;
+				}
+            };
+        </script>
+    </body>
+</html>
+
