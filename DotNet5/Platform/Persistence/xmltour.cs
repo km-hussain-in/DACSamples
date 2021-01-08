@@ -56,13 +56,13 @@ namespace Tourism
 		}
 	}
 
-	public class SiteModel
+	public class SiteStore
 	{
 		private static XmlSerializer serializer = new (typeof(List<Site>));
 
 		public List<Site> Sites { get; set; }
 
-		public SiteModel()
+		public SiteStore()
 		{
 			if(File.Exists("sites.xml"))
 			{
